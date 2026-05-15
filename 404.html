@@ -4,8 +4,10 @@
   <link rel="canonical" href="https://johnandersonservice.com/404.html" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4A1C6B">
     <title>Page Not Found | Anderson Heating, Air & Insulation</title>
     <meta name="robots" content="noindex, follow">
+    <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
     <script>
     // 301 redirect map for old URL patterns → new pages
@@ -80,7 +82,7 @@
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center gap-3">
-                    <img src="images/logo.png" alt="John Anderson & Gypsy - Anderson Heating, Air & Insulation, The Paws-itive Choice since 1978" class="w-12 h-12 object-contain" width="48" height="48">
+                    <img src="images/logo.png loading="lazy" alt="John Anderson & Gypsy - Anderson Heating, Air & Insulation, The Paws-itive Choice since 1978" class="w-12 h-12 object-contain" width="48" height="48">
                     <div>
                         <div class="font-bold text-2xl" style="color:#4A1C6B">Anderson</div>
                         <div class="text-sm -mt-1 text-gray-600">Heating, Air & Insulation</div>
@@ -117,7 +119,7 @@
                 <a href="calhoun-ga-hvac.html" class="block p-3 border rounded-xl hover:border-orange-400">🔧 HVAC Services Calhoun GA</a>
                 <a href="emergency-hvac-repair.html" class="block p-3 border rounded-xl hover:border-orange-400">🚨 24/7 Emergency HVAC Repair</a>
                 <a href="service-area.html" class="block p-3 border rounded-xl hover:border-orange-400">📍 Service Area Map</a>
-                <a href="reviews.html" class="block p-3 border rounded-xl hover:border-orange-400">⭐ 513+ Google Reviews</a>
+                <a href="reviews.html" class="block p-3 border rounded-xl hover:border-orange-400">⭐ 632+ Google Reviews</a>
                 <a href="insulation-air-sealing.html" class="block p-3 border rounded-xl hover:border-orange-400">🏠 Insulation & Air Sealing</a>
                 <a href="financing.html" class="block p-3 border rounded-xl hover:border-orange-400">💰 Financing & Discounts</a>
                 <a href="about.html" class="block p-3 border rounded-xl hover:border-orange-400">📖 About Anderson HAI</a>
@@ -130,5 +132,14 @@
         <p>Anderson Heating, Air & Insulation — The Paws-itive Choice 🐾</p>
         <p>519 Pine Street, Calhoun GA 30701 | <a href="tel:+17066290749" class="font-semibold">(706) 629-0749</a> | Licensed CN:003636</p>
     </footer>
+    <!-- Sticky Mobile Phone Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-anderson-orange p-3 shadow-lg z-50 md:hidden">
+        <a href="tel:(706) 629-0749" class="flex items-center justify-center gap-3 text-white font-bold text-lg">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            Call Now: (706) 629-0749
+        </a>
+    </div>
 </body>
 </html>
