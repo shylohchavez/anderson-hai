@@ -216,16 +216,16 @@
                     <input type="hidden" name="_subject" value="New Contact from Anderson HAI Website">
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Full Name</label>
-                        <input type="text" class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg" placeholder="Your name" required>
+                        <input type="text" name="name" class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg" placeholder="Your name" required>
                     </div>
                     <div class="grid grid-cols-2 gap-5">
                         <div>
                             <label class="block text-sm font-medium mb-1.5">Phone Number</label>
-                            <input type="tel" class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg" placeholder="(706) 555-1234" required>
+                            <input type="tel" name="phone" class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg" placeholder="(706) 555-1234" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium mb-1.5">Service Needed</label>
-                            <select class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg">
+                            <select name="service_needed" class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg">
                                 <option>AC Repair</option>
                                 <option>Heating Repair</option>
                                 <option>HVAC Replacement</option>
@@ -245,7 +245,7 @@
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Message / Details</label>
-                        <textarea class="w-full border border-gray-300 rounded-3xl px-5 py-4 text-lg h-32" placeholder="Tell us about your home or issue..."></textarea>
+                        <textarea name="message" class="w-full border border-gray-300 rounded-3xl px-5 py-4 text-lg h-32" placeholder="Tell us about your home or issue..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-anderson-orange text-white py-4 rounded-2xl font-bold text-lg hover:bg-anderson-orange/90 transition">Request Free Estimate</button>
                     <p class="text-xs text-center text-gray-500">We typically respond within 30 minutes during business hours.</p>
