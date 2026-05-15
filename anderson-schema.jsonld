@@ -6,7 +6,7 @@
       "@id": "https://johnandersonservice.com/#organization",
       "name": "John Anderson Service Company, Inc.",
       "alternateName": "Anderson Heating, Air & Insulation",
-      "description": "The Paws-itive Choice - Premier HVAC, insulation, and whole-home energy efficiency company serving Northwest Georgia since 1978. Most companies just swap the box. We fix the house.",
+      "description": "Northwest Georgia's premier HVAC contractors with energy efficiency expertise. 45 years of heating and air conditioning excellence serving Calhoun, Dalton, Rome, and surrounding areas.",
       "url": "https://johnandersonservice.com",
       "telephone": "(706) 629-0749",
       "email": "info@johnandersonservice.com",
@@ -31,7 +31,7 @@
       },
       "foundingDate": "1978",
       "numberOfEmployees": "10-20",
-      "slogan": "The Paws-itive Choice",
+      "slogan": "Northwest Georgia's Premier HVAC Contractors",
       "brand": {
         "@type": "Brand",
         "name": "Anderson Heating, Air & Insulation",
@@ -39,78 +39,78 @@
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "HVAC and Home Energy Services",
+        "name": "HVAC Services and Energy Solutions",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "HVAC Repair, Installation & Maintenance",
-              "description": "Expert repair, installation, and maintenance for all HVAC systems including inverter systems."
+              "description": "Expert HVAC repair, installation, and maintenance for all heating and air conditioning systems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Ductless Mini-Splits & Cold Climate Heat Pumps",
-              "description": "Specialty installation of MRCOOL and other high-efficiency ductless systems."
+              "name": "Heat Pump Installation & Service",
+              "description": "Specialty installation and service of heat pump systems including cold climate heat pumps."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Insulation & Air Sealing",
-              "description": "Whole-home insulation and air sealing to maximize HVAC efficiency."
+              "name": "Ductless Mini-Split Systems",
+              "description": "Professional installation of MRCOOL and other ductless HVAC systems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Duct Cleaning",
-              "description": "Professional duct cleaning services."
+              "name": "Emergency HVAC Repair",
+              "description": "Same-day emergency HVAC repair service for heating and air conditioning systems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Indoor Air Quality",
-              "description": "Solutions for better indoor air quality."
+              "name": "HVAC System Optimization with Insulation",
+              "description": "Insulation and air sealing services to maximize HVAC system efficiency and performance."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Water Heaters & Tankless",
-              "description": "Installation and service for water heaters."
+              "name": "Duct Cleaning and Sealing",
+              "description": "Professional ductwork cleaning and sealing to optimize HVAC airflow."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Crawlspace Encapsulation",
-              "description": "Professional crawlspace encapsulation services."
+              "name": "Indoor Air Quality Solutions",
+              "description": "HVAC-integrated indoor air quality systems and filtration."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Whole Home Energy Audits",
-              "description": "Comprehensive energy audits and weatherization."
+              "name": "Energy-Efficient HVAC Upgrades",
+              "description": "BPI-certified energy audits and HVAC efficiency upgrades."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Custom Sheet Metal Fabrication",
-              "description": "In-house custom ductwork fabrication with laser cutters."
+              "name": "Custom HVAC Ductwork Fabrication",
+              "description": "In-house custom ductwork fabrication for optimal HVAC performance."
             }
           }
         ]
@@ -128,17 +128,17 @@
         },
         {
           "@type": "City",
+          "name": "Rome",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
           "name": "Cartersville",
           "addressRegion": "GA"
         },
         {
           "@type": "City",
           "name": "Adairsville",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Rome",
           "addressRegion": "GA"
         },
         {
@@ -159,8 +159,8 @@
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "632",
+        "ratingValue": "5.0",
+        "reviewCount": "513",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -172,36 +172,44 @@
         },
         "author": {
           "@type": "Person",
-          "name": "Verified Customer"
+          "name": "Verified Google Customer"
         }
       },
       "knowsAbout": [
         "HVAC Systems",
-        "Heat Pumps",
+        "Heat Pump Installation",
+        "Air Conditioning Repair",
+        "Furnace Installation",
         "Ductless Mini Splits",
-        "Home Insulation",
-        "Air Sealing",
-        "Energy Efficiency",
-        "Indoor Air Quality",
-        "Weatherization",
-        "Custom Ductwork"
+        "Emergency HVAC Service",
+        "HVAC Energy Efficiency",
+        "Custom Ductwork",
+        "BPI Energy Audits"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BPI Certified Energy Auditor",
+          "credentialCategory": "Energy Efficiency Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Georgia HVAC Contractor License",
+          "credentialCategory": "State HVAC Licensing"
+        }
       ],
       "memberOf": [
         {
           "@type": "Organization",
-          "name": "TVA EnergyRight"
+          "name": "Building Performance Institute (BPI)"
         },
         {
           "@type": "Organization",
-          "name": "BPI (Building Performance Institute)"
+          "name": "ACCA (Air Conditioning Contractors of America)"
         },
         {
           "@type": "Organization",
-          "name": "ACCA"
-        },
-        {
-          "@type": "Organization",
-          "name": "NATE"
+          "name": "NATE (North American Technician Excellence)"
         }
       ],
       "award": [
@@ -212,53 +220,22 @@
         "@type": "Offer",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "validFrom": "2026-05-13",
+        "validFrom": "2026-05-15",
         "itemOffered": {
           "@type": "Service",
-          "name": "HVAC and Energy Efficiency Services"
+          "name": "Professional HVAC Services with Energy Efficiency Expertise"
         }
       }
-    },
-    {
-      "@type": "InsulationContractor",
-      "@id": "https://johnandersonservice.com/#insulation",
-      "name": "Anderson Heating, Air & Insulation",
-      "parentOrganization": {
-        "@id": "https://johnandersonservice.com/#organization"
-      },
-      "serviceType": "Home Insulation and Air Sealing",
-      "description": "Professional insulation installation, air sealing, and crawlspace encapsulation as part of whole-home energy approach."
     },
     {
       "@type": "WebSite",
       "@id": "https://johnandersonservice.com/#website",
       "url": "https://johnandersonservice.com",
       "name": "Anderson Heating, Air & Insulation",
-      "description": "Northwest Georgia's #1 HVAC and home energy company - The Paws-itive Choice since 1978",
+      "description": "Northwest Georgia's premier HVAC contractors with energy efficiency expertise since 1978",
       "publisher": {
         "@id": "https://johnandersonservice.com/#organization"
       }
-    },
-    {
-      "@type": "LocalBusiness",
-      "additionalType": "https://schema.org/HVACBusiness",
-      "name": "Anderson Heating, Air & Insulation",
-      "telephone": "(706) 629-0749",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "519 Pine Street",
-        "addressLocality": "Calhoun",
-        "addressRegion": "GA",
-        "postalCode": "30701"
-      },
-      "openingHours": "Mo-Fr 08:00-17:00",
-      "priceRange": "$$",
-      "image": "https://johnandersonservice.com/images/van-wrap.jpg",
-      "sameAs": [
-        "https://www.facebook.com/AndersonHeatAirCo",
-        "https://www.instagram.com/andersonheatingair",
-        "https://www.linkedin.com/company/anderson-heating-air-insulation"
-      ]
     }
   ]
 }
