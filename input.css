@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Anderson HAI custom styles */
+.brand-purple { color: #4A1C6B; }
+.brand-orange { color: #FF6B00; }
+.nav-link { transition: color 0.2s; }
+.nav-link:hover { color: #FF6B00; }
+.cta-button { transition: all 0.3s ease; }
+.cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+.service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }

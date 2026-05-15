@@ -12,19 +12,8 @@
     <meta property="og:image" content="https://shylohchavez.github.io/anderson-hai/images/logo.png">
     <meta property="og:url" content="https://johnandersonservice.com/catoosa-county-ga.html">
     <meta name="twitter:card" content="summary_large_image">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'anderson-purple': '#4A1C6B',
-                        'anderson-orange': '#FF6B00',
-                    }
-                }
-            }
-        }
-    </script><style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
         .brand-purple { color: #4A1C6B; }
         .brand-orange { color: #FF6B00; }
         .nav-link { transition: color 0.2s; }
@@ -188,9 +177,66 @@
                         Free Estimate
                     </a>
                 </div>
+                    <!-- Mobile hamburger -->
+                    <button id="mobile-menu-btn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-gray-100" aria-label="Open menu">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
             </div>
         </div>
     </header>
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden">
+        <div id="mobile-menu-overlay" class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute right-0 top-0 h-full w-72 bg-white shadow-xl transform transition-transform">
+            <div class="flex justify-between items-center p-5 border-b">
+                <span class="font-bold text-lg brand-purple">Menu</span>
+                <button id="mobile-menu-close" class="p-2 hover:bg-gray-100 rounded-lg" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="p-5 space-y-4">
+                <a href="index.html" class="block text-lg font-medium hover:text-anderson-orange">Home</a>
+                <div>
+                    <span class="block text-lg font-medium text-gray-500 mb-2">Services</span>
+                    <div class="pl-3 space-y-2">
+                        <a href="hvac-repair-install.html" class="block text-sm hover:text-anderson-orange">HVAC Repair &amp; Install</a>
+                        <a href="heat-pump-mini-split.html" class="block text-sm hover:text-anderson-orange">Heat Pumps &amp; Mini-Splits</a>
+                        <a href="insulation-air-sealing.html" class="block text-sm hover:text-anderson-orange">Insulation &amp; Air Sealing</a>
+                        <a href="duct-cleaning.html" class="block text-sm hover:text-anderson-orange">Duct Cleaning &amp; IAQ</a>
+                        <a href="water-heaters.html" class="block text-sm hover:text-anderson-orange">Water Heaters</a>
+                        <a href="crawlspace-encapsulation.html" class="block text-sm hover:text-anderson-orange">Crawlspace Encapsulation</a>
+                        <a href="whole-home-energy-audits.html" class="block text-sm hover:text-anderson-orange">Energy Audits</a>
+                        <a href="windows-doors.html" class="block text-sm hover:text-anderson-orange">Windows &amp; Doors</a>
+                    </div>
+                </div>
+                <a href="maintenance-plan.html" class="block text-lg font-medium hover:text-anderson-orange">Maintenance Plan</a>
+                <a href="about.html" class="block text-lg font-medium hover:text-anderson-orange">About</a>
+                <a href="reviews.html" class="block text-lg font-medium hover:text-anderson-orange">Reviews</a>
+                <a href="contact.html" class="block text-lg font-medium hover:text-anderson-orange">Contact</a>
+                <div class="pt-4 border-t">
+                    <a href="tel:+17066290749" class="flex items-center gap-2 bg-anderson-purple text-white px-5 py-3 rounded-xl font-semibold text-center justify-center">
+                        📞 (706) 629-0749
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var btn=document.getElementById('mobile-menu-btn'),
+            menu=document.getElementById('mobile-menu'),
+            close=document.getElementById('mobile-menu-close'),
+            overlay=document.getElementById('mobile-menu-overlay');
+        if(!btn||!menu)return;
+        btn.addEventListener('click',function(){menu.classList.remove('hidden')});
+        close.addEventListener('click',function(){menu.classList.add('hidden')});
+        overlay.addEventListener('click',function(){menu.classList.add('hidden')});
+    })();
+    </script>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-anderson-purple to-anderson-purple/90 text-white py-16 md:py-20">
@@ -206,7 +252,7 @@
             </h1>
             
             <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 opacity-90">
-                Anderson Heating, Air & Insulation (formerly John Anderson Service Company, est. January 1978) delivers BPI-certified HVAC repair, installation, insulation, and whole-home energy solutions to Calhoun and all of Gordon County. The Paws-itive Choice for families who want real comfort, not just a new box.
+                Anderson Heating, Air & Insulation (formerly John Anderson Service Company, est. January 1978) delivers BPI-certified HVAC repair, installation, insulation, and whole-home energy solutions to Ringgold and all of Catoosa County. The Paws-itive Choice for families who want real comfort, not just a new box.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -247,7 +293,7 @@
         <div class="text-center mb-12">
             <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">WHAT WE DO BEST</div>
             <h2 class="text-4xl font-bold tracking-tight">HVAC is King. Everything Else Supports It.</h2>
-            <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Most companies just swap the box. We fix the whole house. That's the Anderson difference in Calhoun.</p>
+            <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Most companies just swap the box. We fix the whole house. That's the Anderson difference in Catoosa County.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -255,7 +301,7 @@
             <div class="service-card bg-white border rounded-3xl p-8 group">
                 <div class="text-4xl mb-4">❄️</div>
                 <h3 class="font-bold text-2xl mb-3">HVAC Repair, Install & Maintenance</h3>
-                <p class="text-gray-600 mb-6">AC repair, furnace repair, heat pump & mini-split installation, 24/7 emergency service, tune-ups and maintenance plans serving Calhoun and Gordon County.</p>
+                <p class="text-gray-600 mb-6">AC repair, furnace repair, heat pump & mini-split installation, 24/7 emergency service, tune-ups and maintenance plans serving Ringgold and Catoosa County.</p>
                 <a href="hvac-repair-install.html" class="text-anderson-orange font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book a Free Estimate</a>
             </div>
 
@@ -263,7 +309,7 @@
             <div class="service-card bg-white border rounded-3xl p-8 group">
                 <div class="text-4xl mb-4">🌡️</div>
                 <h3 class="font-bold text-2xl mb-3">Heat Pumps & Ductless Mini-Splits</h3>
-                <p class="text-gray-600 mb-6">Specialists in high-efficiency heat pumps and multi-zone mini-split systems — perfect for Calhoun homes, additions, and energy-conscious homeowners.</p>
+                <p class="text-gray-600 mb-6">Specialists in high-efficiency heat pumps and multi-zone mini-split systems — perfect for Catoosa County homes, additions, and energy-conscious homeowners.</p>
                 <a href="heat-pump-mini-split.html" class="text-anderson-orange font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book a Free Estimate</a>
             </div>
 
@@ -271,7 +317,7 @@
             <div class="service-card bg-white border rounded-3xl p-8 group">
                 <div class="text-4xl mb-4">🏠</div>
                 <h3 class="font-bold text-2xl mb-3">Insulation & Air Sealing</h3>
-                <p class="text-gray-600 mb-6">Attic, wall & crawlspace insulation, blower door testing, air sealing — because your HVAC is only as good as your home's envelope in Calhoun.</p>
+                <p class="text-gray-600 mb-6">Attic, wall & crawlspace insulation, blower door testing, air sealing — because your HVAC is only as good as your home's envelope in Catoosa County.</p>
                 <a href="insulation-air-sealing.html" class="text-anderson-orange font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book a Free Estimate</a>
             </div>
 
@@ -279,7 +325,7 @@
             <div class="service-card bg-white border rounded-3xl p-8 group">
                 <div class="text-4xl mb-4">💨</div>
                 <h3 class="font-bold text-2xl mb-3">Duct Cleaning & Indoor Air Quality</h3>
-                <p class="text-gray-600 mb-6">Professional duct cleaning, duct sealing, air purifiers, dehumidifiers, and whole-home ventilation for healthier air in Calhoun.</p>
+                <p class="text-gray-600 mb-6">Professional duct cleaning, duct sealing, air purifiers, dehumidifiers, and whole-home ventilation for healthier air in Catoosa County.</p>
                 <a href="indoor-air-quality.html" class="text-anderson-orange font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book a Free Estimate</a>
             </div>
 
@@ -287,7 +333,7 @@
             <div class="service-card bg-white border rounded-3xl p-8 group border-anderson-orange/30">
                 <div class="text-4xl mb-4">🔧</div>
                 <h3 class="font-bold text-2xl mb-3">Custom Sheet Metal Fabrication</h3>
-                <p class="text-gray-600 mb-6"><strong>Our biggest differentiator:</strong> In-house laser cutters and custom ductwork fabrication at our shop. No one else in the area does this what makes anderson different for catoosa county homeowners.</p>
+                <p class="text-gray-600 mb-6"><strong>Our biggest differentiator:</strong> In-house laser cutters and custom ductwork fabrication at our shop. No one else in the area does this for Catoosa County homeowners.</p>
                 <a href="custom-sheet-metal.html" class="text-anderson-orange font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Get Custom Quote</a>
             </div>
 
@@ -295,7 +341,7 @@
             <div class="service-card bg-white border rounded-3xl p-8 group">
                 <div class="text-4xl mb-4">📋</div>
                 <h3 class="font-bold text-2xl mb-3">Whole Home Energy Audits</h3>
-                <p class="text-gray-600 mb-6">Comprehensive BPI-certified energy audits that identify exactly where your Calhoun home is losing energy — then we fix it.</p>
+                <p class="text-gray-600 mb-6">Comprehensive BPI-certified energy audits that identify exactly where your Catoosa County home is losing energy — then we fix it.</p>
                 <a href="whole-home-energy-audits.html" class="text-anderson-orange font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book a Free Estimate</a>
             </div>
         </div>
@@ -306,19 +352,19 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">THE ANDERSON DIFFERENCE</div>
-                <h2 class="text-4xl font-bold tracking-tight">Why Calhoun Homeowners Choose Anderson</h2>
+                <h2 class="text-4xl font-bold tracking-tight">Why Catoosa County Homeowners Choose Anderson</h2>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white/10 rounded-3xl p-8">
                     <div class="text-3xl mb-4">🐾</div>
                     <h3 class="font-bold text-xl mb-3">The Paws-itive Choice</h3>
-                    <p class="opacity-80">Our mascot Gypsy the dog reminds us every day that home comfort should be warm, welcoming, and family-friendly for Calhoun families.</p>
+                    <p class="opacity-80">Our mascot Gypsy the dog reminds us every day that home comfort should be warm, welcoming, and family-friendly for Catoosa County families.</p>
                 </div>
                 <div class="bg-white/10 rounded-3xl p-8">
                     <div class="text-3xl mb-4">🏭</div>
                     <h3 class="font-bold text-xl mb-3">In-House Custom Sheet Metal Shop</h3>
-                    <p class="opacity-80">Laser cutters on site. We fabricate custom ductwork as part of your complete system — faster, better fit, no middleman for Calhoun projects.</p>
+                    <p class="opacity-80">Laser cutters on site. We fabricate custom ductwork as part of your complete system — faster, better fit, no middleman for Catoosa County projects.</p>
                 </div>
                 <div class="bg-white/10 rounded-3xl p-8">
                     <div class="text-3xl mb-4">📜</div>
@@ -333,12 +379,12 @@
                 <div class="bg-white/10 rounded-3xl p-8">
                     <div class="text-3xl mb-4">✅</div>
                     <h3 class="font-bold text-xl mb-3">Satisfaction Guarantee</h3>
-                    <p class="opacity-80">"If it's not right, we'll make it right — no extra charge." That's our promise since 1978 for every Calhoun customer.</p>
+                    <p class="opacity-80">"If it's not right, we'll make it right — no extra charge." That's our promise since 1978 for every Catoosa County customer.</p>
                 </div>
                 <div class="bg-white/10 rounded-3xl p-8">
                     <div class="text-3xl mb-4">🌍</div>
                     <h3 class="font-bold text-xl mb-3">Whole-Home Energy Approach</h3>
-                    <p class="opacity-80">We don't just fix your HVAC. We look at insulation, air sealing, ductwork, and your entire energy picture in Calhoun.</p>
+                    <p class="opacity-80">We don't just fix your HVAC. We look at insulation, air sealing, ductwork, and your entire energy picture in Catoosa County.</p>
                 </div>
             </div>
         </div>
@@ -347,16 +393,16 @@
     <!-- Local Hyper-Local Section -->
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-gray-50">
         <div class="text-center mb-12">
-            <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">HYPER-LOCAL TO CALHOUN</div>
-            <h2 class="text-4xl font-bold tracking-tight">Proudly Serving Calhoun & Gordon County Neighborhoods</h2>
+            <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">HYPER-LOCAL TO CATOOSA COUNTY</div>
+            <h2 class="text-4xl font-bold tracking-tight">Proudly Serving Ringgold & Catoosa County Neighborhoods</h2>
         </div>
         
         <div class="max-w-4xl mx-auto">
             <div class="bg-white border rounded-3xl p-8 md:p-10">
-                <p class="text-lg text-gray-700 mb-6">From historic downtown Calhoun to the growing Eastside and Westside neighborhoods, we understand the unique heating and cooling challenges of Gordon County homes — older farmhouses, 1980s subdivisions, and new construction alike. Our whole-home approach fixes the house, not just the equipment.</p>
-                <p class="text-lg text-gray-700 mb-6"><strong>Local landmarks we know well:</strong> New Echota State Historic Site, Calhoun Square, Gordon County Courthouse, and Lake Marvin.</p>
-                <p class="text-lg text-gray-700 mb-6"><strong>Neighborhoods we serve daily:</strong> Downtown Calhoun, Park Place, East Calhoun, Westside, and surrounding Gordon County communities.</p>
-                <p class="text-lg text-gray-700"><strong>The Anderson difference in Calhoun:</strong> As our home base since 1978, we know every street in Calhoun and Gordon County. Our custom sheet metal shop at 519 Pine Street means faster turnaround for local homeowners.</p>
+                <p class="text-lg text-gray-700 mb-6">We understand the unique heating and cooling challenges of Catoosa County homes — older farmhouses, established subdivisions, and new construction alike. Our whole-home approach fixes the house, not just the equipment.</p>
+                <p class="text-lg text-gray-700 mb-6"><strong>Areas we serve in Catoosa County:</strong> Ringgold and all surrounding Catoosa County communities.</p>
+                <p class="text-lg text-gray-700 mb-6"><strong>The Anderson difference:</strong> Based at 519 Pine Street in Calhoun since 1978, we serve all of Catoosa County with the same whole-home energy approach that has earned us 632+ Google reviews.</p>
+                <p class="text-lg text-gray-700"><strong>Custom sheet metal:</strong> Our in-house fabrication shop means faster turnaround on custom ductwork for Catoosa County homeowners — no waiting on third-party suppliers.</p>
             </div>
         </div>
     </section>
@@ -366,14 +412,14 @@
         <div class="text-center mb-12">
             <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">TRUSTED BY HUNDREDS</div>
             <h2 class="text-4xl font-bold">632+ Google Reviews • 4.8★ Average</h2>
-            <p class="mt-3 text-gray-600">Real homeowners across Calhoun, Gordon County and NW Georgia.</p>
+            <p class="mt-3 text-gray-600">Real homeowners across Ringgold, Catoosa County and NW Georgia.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-white border rounded-3xl p-8">
                 <div class="flex text-anderson-orange mb-4">★★★★★</div>
-                <p class="italic">"The Johnsons in Calhoun "</p>
-                <div class="mt-6 text-sm font-semibold">—  "Anderson fixed our AC and showed us how poor insulation was spiking our bills. They sealed everything and our power bill dropped 30%. Best decision we made."</div>
+                <p class="italic">"Anderson fixed our AC and showed us how poor insulation was spiking our bills. They sealed everything and our power bill dropped 30%. Best decision we made."</p>
+                <div class="mt-6 text-sm font-semibold">— The Johnson Family, Catoosa County</div>
             </div>
             <div class="bg-white border rounded-3xl p-8">
                 <div class="flex text-anderson-orange mb-4">★★★★★</div>
@@ -392,24 +438,24 @@
     <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div class="text-center mb-12">
             <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">FREQUENTLY ASKED QUESTIONS</div>
-            <h2 class="text-4xl font-bold tracking-tight">Questions Calhoun Homeowners Ask</h2>
+            <h2 class="text-4xl font-bold tracking-tight">Questions Catoosa County Homeowners Ask</h2>
         </div>
 
         <div class="space-y-4">
             <div class="bg-white border rounded-3xl p-6">
-                <h3 class="font-semibold text-lg mb-2">Do you offer do you offer same-day hvac repair in catoosa county ga?</h3>
+                <h3 class="font-semibold text-lg mb-2">Do you offer same-day HVAC repair in Catoosa County, GA?</h3>
                 <p class="text-gray-600">Yes — we prioritize Yes — we prioritize Catoosa County calls for emerg for emergency AC and heating repairs with 24/7 availability.</p>
             </div>
             <div class="bg-white border rounded-3xl p-6">
-                <h3 class="font-semibold text-lg mb-2">What what communities in catoosa county do you serve?</h3>
-                <p class="text-gray-600">We serve all of Calhoun including Ringgold and all Catoosa County communities.</p>
+                <h3 class="font-semibold text-lg mb-2">What communities in Catoosa County do you serve?</h3>
+                <p class="text-gray-600">We serve Ringgold, and all Catoosa County communities — from small towns to rural areas.</p>
             </div>
             <div class="bg-white border rounded-3xl p-6">
-                <h3 class="font-semibold text-lg mb-2">Is your is your sheet metal shop available for catoosa county customers?</h3>
+                <h3 class="font-semibold text-lg mb-2">Is your sheet metal shop available for Catoosa County customers?</h3>
                 <p class="text-gray-600">Yes, our in-house laser cutters at 519 Pine Street in Calhoun fabricate custom ductwork for Catoosa County projects.</p>
             </div>
             <div class="bg-white border rounded-3xl p-6">
-                <h3 class="font-semibold text-lg mb-2">Do you do do you do energy audits for catoosa county homes?</h3>
+                <h3 class="font-semibold text-lg mb-2">Do you do energy audits for Catoosa County homes?</h3>
                 <p class="text-gray-600">Absolutely. Our BPI-certified audits identify exactly where your Catoosa County home is losing energy.</p>
             </div>
             <div class="bg-white border rounded-3xl p-6">
@@ -421,7 +467,7 @@
 
     <!-- Final CTA -->
     <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <h2 class="text-4xl font-bold tracking-tight mb-4">Ready to Fix Your Whole House in Calhoun?</h2>
+        <h2 class="text-4xl font-bold tracking-tight mb-4">Ready to Fix Your Whole House in Catoosa County?</h2>
         <p class="text-xl text-gray-600 mb-8">Call the family-owned experts who have been doing this right since 1978.</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -434,7 +480,7 @@
         </div>
         
         <p class="mt-6 text-sm text-gray-500">Anderson Heating, Air & Insulation — The Paws-itive Choice 🐾<br>
-        Formerly John Anderson Service Company • Serving Calhoun, Gordon County & NW Georgia since 1978</p>
+        Formerly John Anderson Service Company • Serving Ringgold, Catoosa County & NW Georgia since 1978</p>
     </section>
 
     <!-- Footer -->
@@ -490,9 +536,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        console.log('%c[Anderson HAI] Calhoun city page loaded successfully.', 'color:#4A1C6B');
-    </script>
 </body>
 </html>

@@ -12,22 +12,7 @@
     <meta property="og:image" content="https://shylohchavez.github.io/anderson-hai/images/logo.png">
     <meta property="og:url" content="https://johnandersonservice.com">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Performance: preconnect to Tailwind CDN for faster script load -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <!-- Tailwind CSS CDN for modern static site -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'anderson-purple': '#4A1C6B',
-                        'anderson-orange': '#FF6B00',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
     <style>
         .brand-purple { color: #4A1C6B; }
         .brand-orange { color: #FF6B00; }
@@ -183,9 +168,66 @@
                         Free Estimate
                     </a>
                 </div>
+                    <!-- Mobile hamburger -->
+                    <button id="mobile-menu-btn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-gray-100" aria-label="Open menu">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
             </div>
         </div>
     </header>
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden">
+        <div id="mobile-menu-overlay" class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute right-0 top-0 h-full w-72 bg-white shadow-xl transform transition-transform">
+            <div class="flex justify-between items-center p-5 border-b">
+                <span class="font-bold text-lg brand-purple">Menu</span>
+                <button id="mobile-menu-close" class="p-2 hover:bg-gray-100 rounded-lg" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="p-5 space-y-4">
+                <a href="index.html" class="block text-lg font-medium hover:text-anderson-orange">Home</a>
+                <div>
+                    <span class="block text-lg font-medium text-gray-500 mb-2">Services</span>
+                    <div class="pl-3 space-y-2">
+                        <a href="hvac-repair-install.html" class="block text-sm hover:text-anderson-orange">HVAC Repair &amp; Install</a>
+                        <a href="heat-pump-mini-split.html" class="block text-sm hover:text-anderson-orange">Heat Pumps &amp; Mini-Splits</a>
+                        <a href="insulation-air-sealing.html" class="block text-sm hover:text-anderson-orange">Insulation &amp; Air Sealing</a>
+                        <a href="duct-cleaning.html" class="block text-sm hover:text-anderson-orange">Duct Cleaning &amp; IAQ</a>
+                        <a href="water-heaters.html" class="block text-sm hover:text-anderson-orange">Water Heaters</a>
+                        <a href="crawlspace-encapsulation.html" class="block text-sm hover:text-anderson-orange">Crawlspace Encapsulation</a>
+                        <a href="whole-home-energy-audits.html" class="block text-sm hover:text-anderson-orange">Energy Audits</a>
+                        <a href="windows-doors.html" class="block text-sm hover:text-anderson-orange">Windows &amp; Doors</a>
+                    </div>
+                </div>
+                <a href="maintenance-plan.html" class="block text-lg font-medium hover:text-anderson-orange">Maintenance Plan</a>
+                <a href="about.html" class="block text-lg font-medium hover:text-anderson-orange">About</a>
+                <a href="reviews.html" class="block text-lg font-medium hover:text-anderson-orange">Reviews</a>
+                <a href="contact.html" class="block text-lg font-medium hover:text-anderson-orange">Contact</a>
+                <div class="pt-4 border-t">
+                    <a href="tel:+17066290749" class="flex items-center gap-2 bg-anderson-purple text-white px-5 py-3 rounded-xl font-semibold text-center justify-center">
+                        📞 (706) 629-0749
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var btn=document.getElementById('mobile-menu-btn'),
+            menu=document.getElementById('mobile-menu'),
+            close=document.getElementById('mobile-menu-close'),
+            overlay=document.getElementById('mobile-menu-overlay');
+        if(!btn||!menu)return;
+        btn.addEventListener('click',function(){menu.classList.remove('hidden')});
+        close.addEventListener('click',function(){menu.classList.add('hidden')});
+        overlay.addEventListener('click',function(){menu.classList.add('hidden')});
+    })();
+    </script>
 
     <!-- Hero Section - Storytelling + Conversion -->
     <section class="bg-gradient-to-br from-anderson-purple to-anderson-purple/90 text-white py-20">
@@ -437,21 +479,21 @@
         </div>
         
         <div class="grid md:grid-cols-3 gap-6">
-            <a href="blog/how-much-does-ac-repair-cost-in-calhoun-ga.html" class="group block bg-white border rounded-3xl p-6 hover:shadow-lg transition">
+            <a href="blog.html" class="group block bg-white border rounded-3xl p-6 hover:shadow-lg transition">
                 <div class="text-xs text-anderson-orange font-semibold mb-2">HVAC REPAIR & COSTS</div>
                 <h3 class="font-bold text-lg leading-tight group-hover:text-anderson-purple">How Much Does AC Repair Cost in Calhoun GA? (2026 Guide)</h3>
                 <p class="text-sm text-gray-600 mt-3 line-clamp-3">Transparent pricing, what affects costs, and why BPI-certified whole-home experts save you money long-term.</p>
                 <div class="mt-4 text-anderson-orange text-sm font-semibold">Read the guide</div>
             </a>
             
-            <a href="blog/custom-sheet-metal-anderson-difference.html" class="group block bg-white border rounded-3xl p-6 hover:shadow-lg transition">
+            <a href="blog.html" class="group block bg-white border rounded-3xl p-6 hover:shadow-lg transition">
                 <div class="text-xs text-anderson-orange font-semibold mb-2">BPI CERTIFICATION</div>
                 <h3 class="font-bold text-lg leading-tight group-hover:text-anderson-purple">BPI Certification Explained: Why It Matters for Your Energy Bills</h3>
                 <p class="text-sm text-gray-600 mt-3 line-clamp-3">What BPI really means, how it differs from other certs, and why it delivers measurable savings other companies can't match.</p>
                 <div class="mt-4 text-anderson-orange text-sm font-semibold">Read the guide</div>
             </a>
             
-            <a href="blog/whole-home-energy-approach.html" class="group block bg-white border rounded-3xl p-6 hover:shadow-lg transition">
+            <a href="blog.html" class="group block bg-white border rounded-3xl p-6 hover:shadow-lg transition">
                 <div class="text-xs text-anderson-orange font-semibold mb-2">WHOLE-HOME ENERGY</div>
                 <h3 class="font-bold text-lg leading-tight group-hover:text-anderson-purple">The Whole-Home Energy Approach: Why Most Companies Only Fix Half the Problem</h3>
                 <p class="text-sm text-gray-600 mt-3 line-clamp-3">John Anderson's story of realizing that "swapping the box" isn't enough — and how we fix the entire house.</p>
@@ -531,6 +573,27 @@
         Formerly John Anderson Service Company • Serving NW Georgia since 1978</p>
     </section>
 
+    <!-- Video Embed: Company Overview / Install Time-lapse -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-8">
+            <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">REAL WORK. REAL RESULTS.</div>
+            <h2 class="font-bold text-3xl mb-4">See the Anderson Difference</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">From custom fabrication to whole-home energy upgrades — watch how we deliver the Paws-itive Choice in Northwest Georgia.</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="aspect-video bg-black rounded-2xl overflow-hidden shadow-xl">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_J9e_FdzBJ4" 
+                        title="Anderson Heating, Air &amp; Insulation - HVAC Installation &amp; Shop Tour" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        loading="lazy"></iframe>
+            </div>
+            <p class="text-sm text-center mt-4 text-gray-500">Real customers. Real homes. Real comfort.</p>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-anderson-purple text-white/80 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -585,30 +648,7 @@
         </div>
     </footer>
 
-    <script>
-        // Simple mobile nav toggle (for future enhancement)
-        console.log('%c[Anderson HAI] Static homepage loaded successfully. Ready for full site build.', 'color:#4A1C6B');
-    </script>
 
-    <!-- Video Embed: Company Overview / Install Time-lapse -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center mb-8">
-            <div class="text-anderson-orange font-semibold tracking-widest text-sm mb-3">REAL WORK. REAL RESULTS.</div>
-            <h2 class="font-bold text-3xl mb-4">See the Anderson Difference</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">From custom fabrication to whole-home energy upgrades — watch how we deliver the Paws-itive Choice in Northwest Georgia.</p>
-        </div>
-        
-        <div class="max-w-4xl mx-auto">
-            <div class="aspect-video bg-black rounded-2xl overflow-hidden shadow-xl">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_J9e_FdzBJ4" 
-                        title="Anderson Heating, Air &amp; Insulation - HVAC Installation &amp; Shop Tour" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-            </div>
-            <p class="text-sm text-center mt-4 text-gray-500">Real customers. Real homes. Real comfort.</p>
-        </div>
-    </section>
 
     <script type="application/ld+json">
     {
