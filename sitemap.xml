@@ -452,24 +452,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://johnandersonservice.com/emergency-hvac-cartersville.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://johnandersonservice.com/emergency-hvac-dalton.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://johnandersonservice.com/emergency-hvac-rome.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://johnandersonservice.com/emergency-hvac-repair.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -1182,5 +1164,73 @@
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- SEO Cleanup - New Pages Added 2026-05-15 -->
+  <url>
+    <loc>https://johnandersonservice.com/emergency-hvac-adairsville-ga.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/emergency-hvac-repair-calhoun-ga.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/emergency-hvac-repair-cartersville-ga.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/emergency-hvac-repair-dalton-ga.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/emergency-hvac-repair-rome-ga.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/partners.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/emergency-hvac-service.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/calhoun-hvac-service.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/dalton-hvac-service.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/cartersville-hvac-service.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/rome-hvac-service.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
