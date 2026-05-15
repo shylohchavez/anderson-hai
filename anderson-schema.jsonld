@@ -1,0 +1,264 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://johnandersonservice.com/#organization",
+      "name": "John Anderson Service Company, Inc.",
+      "alternateName": "Anderson Heating, Air & Insulation",
+      "description": "The Paws-itive Choice - Premier HVAC, insulation, and whole-home energy efficiency company serving Northwest Georgia since 1978. Most companies just swap the box. We fix the house.",
+      "url": "https://johnandersonservice.com",
+      "telephone": "(706) 629-0749",
+      "email": "info@johnandersonservice.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "519 Pine Street",
+        "addressLocality": "Calhoun",
+        "addressRegion": "GA",
+        "postalCode": "30701",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.5029,
+        "longitude": -84.9513
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "foundingDate": "1978",
+      "numberOfEmployees": "10-20",
+      "slogan": "The Paws-itive Choice",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anderson Heating, Air & Insulation",
+        "logo": "https://johnandersonservice.com/logo.png"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "HVAC and Home Energy Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HVAC Repair, Installation & Maintenance",
+              "description": "Expert repair, installation, and maintenance for all HVAC systems including inverter systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ductless Mini-Splits & Cold Climate Heat Pumps",
+              "description": "Specialty installation of MRCOOL and other high-efficiency ductless systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Insulation & Air Sealing",
+              "description": "Whole-home insulation and air sealing to maximize HVAC efficiency."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Duct Cleaning",
+              "description": "Professional duct cleaning services."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Indoor Air Quality",
+              "description": "Solutions for better indoor air quality."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Water Heaters & Tankless",
+              "description": "Installation and service for water heaters."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Crawlspace Encapsulation",
+              "description": "Professional crawlspace encapsulation services."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Whole Home Energy Audits",
+              "description": "Comprehensive energy audits and weatherization."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Sheet Metal Fabrication",
+              "description": "In-house custom ductwork fabrication with laser cutters."
+            }
+          }
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Calhoun",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Dalton",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Cartersville",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Adairsville",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Rome",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Chatsworth",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Jasper",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Ellijay",
+          "addressRegion": "GA"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "632",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Verified Customer"
+        }
+      },
+      "knowsAbout": [
+        "HVAC Systems",
+        "Heat Pumps",
+        "Ductless Mini Splits",
+        "Home Insulation",
+        "Air Sealing",
+        "Energy Efficiency",
+        "Indoor Air Quality",
+        "Weatherization",
+        "Custom Ductwork"
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "TVA EnergyRight"
+        },
+        {
+          "@type": "Organization",
+          "name": "BPI (Building Performance Institute)"
+        },
+        {
+          "@type": "Organization",
+          "name": "ACCA"
+        },
+        {
+          "@type": "Organization",
+          "name": "NATE"
+        }
+      ],
+      "award": [
+        "#1 Heating & Air Company in Calhoun Magazine - 6+ Consecutive Years",
+        "Clayton County Community Action Award for Weatherization Excellence"
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-05-13",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "HVAC and Energy Efficiency Services"
+        }
+      }
+    },
+    {
+      "@type": "InsulationContractor",
+      "@id": "https://johnandersonservice.com/#insulation",
+      "name": "Anderson Heating, Air & Insulation",
+      "parentOrganization": {
+        "@id": "https://johnandersonservice.com/#organization"
+      },
+      "serviceType": "Home Insulation and Air Sealing",
+      "description": "Professional insulation installation, air sealing, and crawlspace encapsulation as part of whole-home energy approach."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://johnandersonservice.com/#website",
+      "url": "https://johnandersonservice.com",
+      "name": "Anderson Heating, Air & Insulation",
+      "description": "Northwest Georgia's #1 HVAC and home energy company - The Paws-itive Choice since 1978",
+      "publisher": {
+        "@id": "https://johnandersonservice.com/#organization"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "additionalType": "https://schema.org/HVACBusiness",
+      "name": "Anderson Heating, Air & Insulation",
+      "telephone": "(706) 629-0749",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "519 Pine Street",
+        "addressLocality": "Calhoun",
+        "addressRegion": "GA",
+        "postalCode": "30701"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "priceRange": "$$",
+      "image": "https://johnandersonservice.com/images/van-wrap.jpg",
+      "sameAs": [
+        "https://www.facebook.com/AndersonHeatAirCo",
+        "https://www.instagram.com/andersonheatingair",
+        "https://www.linkedin.com/company/anderson-heating-air-insulation"
+      ]
+    }
+  ]
+}

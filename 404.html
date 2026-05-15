@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://johnandersonservice.com/404.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Anderson Heating, Air & Insulation</title>
+    <meta name="robots" content="noindex, follow">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anderson-purple': '#4A1C6B',
+                        'anderson-orange': '#FF6B00',
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+    // 301 redirect map for old URL patterns → new pages
+    (function() {
+        var redirects = {
+            // Old johnandersonservice.com URL patterns
+            '/hvac-services/': '/services.html',
+            '/hvac-services/calhoun/': '/calhoun-ga-hvac.html',
+            '/hvac-services/dalton/': '/dalton-ga-hvac.html',
+            '/hvac-services/rome/': '/rome-ga-hvac.html',
+            '/hvac-services/cartersville/': '/cartersville-ga-hvac.html',
+            '/hvac-services/adairsville/': '/adairsville-ga-hvac.html',
+            '/heating-and-air-conditioning-repair-services/': '/hvac-repair-install.html',
+            '/heating-and-air-conditioning-repair-services/calhoun/': '/calhoun-ga-hvac.html',
+            '/heating-and-air-conditioning-repair-services/dalton/': '/dalton-ga-hvac.html',
+            '/heating-and-air-conditioning-repair-services/rome/': '/rome-ga-hvac.html',
+            '/heating-and-air-conditioning-repair-services/cartersville/': '/cartersville-ga-hvac.html',
+            '/heating-and-air-conditioning-repair-services/lafayette/': '/lafayette-ga.html',
+            '/heating/calhoun/heating-installation/': '/calhoun-ga-hvac.html',
+            '/plumbing-services/': '/services.html',
+            '/plumbing-services/calhoun/': '/calhoun-ga.html',
+            '/plumbing-services/dalton/': '/dalton-ga.html',
+            '/plumbing-services/ellijay/': '/ellijay-ga.html',
+            '/plumbing-services/chatsworth/': '/chatsworth-ga.html',
+            '/plumbing-services/lafayette/': '/lafayette-ga.html',
+            '/insulation/': '/insulation-air-sealing.html',
+            '/insulation/calhoun/': '/insulation-and-hvac-calhoun.html',
+            '/insulation/dalton/': '/insulation-and-hvac-dalton.html',
+            '/airseal/': '/insulation-air-sealing.html',
+            '/airseal/dalton/': '/insulation-and-hvac-dalton.html',
+            '/airseal/calhoun/': '/insulation-and-hvac-calhoun.html',
+            '/energy-audit/': '/whole-home-energy-audits.html',
+            '/ac-repair-calhoun-ga/': '/calhoun-ga-hvac.html',
+            '/hvac-services-calhoun-georgia/': '/calhoun-ga-hvac.html',
+            '/24-7-emergency-hvac-calhoun-ga/': '/emergency-hvac-repair-calhoun-ga.html',
+            '/emergency/': '/emergency-hvac-repair.html',
+            '/about-us/': '/about.html',
+            '/contact-us/': '/contact.html',
+            '/testimonials/': '/reviews.html',
+            '/gallery/': '/our-work.html',
+            '/financing-options/': '/financing.html',
+        };
+
+        var path = window.location.pathname.replace(/\/anderson-hai/g, '');
+
+        // Check exact match
+        if (redirects[path]) {
+            window.location.replace(window.location.origin + '/anderson-hai' + redirects[path]);
+            return;
+        }
+
+        // Check partial match (trailing slash variations)
+        var pathNoSlash = path.replace(/\/$/, '');
+        var pathWithSlash = pathNoSlash + '/';
+        if (redirects[pathNoSlash] || redirects[pathWithSlash]) {
+            var target = redirects[pathNoSlash] || redirects[pathWithSlash];
+            window.location.replace(window.location.origin + '/anderson-hai' + target);
+            return;
+        }
+
+        // Check for city patterns
+        var cityMatch = path.match(/\/(calhoun|dalton|rome|cartersville|adairsville|chatsworth|jasper|ellijay|fairmount|resaca)/i);
+        if (cityMatch) {
+            var city = cityMatch[1].toLowerCase();
+            window.location.replace(window.location.origin + '/anderson-hai/' + city + '-ga.html');
+            return;
+        }
+    })();
+    </script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="Anderson HAI logo" class="w-12 h-12 object-contain">
+                    <div>
+                        <div class="font-bold text-2xl" style="color:#4A1C6B">Anderson</div>
+                        <div class="text-sm -mt-1 text-gray-600">Heating, Air & Insulation</div>
+                    </div>
+                </a>
+                <a href="tel:+17066290749" class="bg-anderson-orange text-white px-5 py-2.5 rounded-xl font-semibold text-sm">
+                    📞 (706) 629-0749
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 text-center px-4">
+        <div class="text-6xl mb-6">🐾</div>
+        <h1 class="text-4xl font-bold mb-4" style="color:#4A1C6B">Oops! Page Not Found</h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Looks like this page has wandered off. Don't worry — Gypsy will help you find your way back to comfort.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <a href="index.html" class="bg-anderson-purple text-white px-8 py-3 rounded-xl font-semibold" style="background:#4A1C6B">
+                Go Home
+            </a>
+            <a href="services.html" class="bg-anderson-orange text-white px-8 py-3 rounded-xl font-semibold" style="background:#FF6B00">
+                View Services
+            </a>
+            <a href="contact.html" class="border-2 border-gray-300 px-8 py-3 rounded-xl font-semibold">
+                Contact Us
+            </a>
+        </div>
+
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6" style="color:#4A1C6B">Looking for one of these?</h2>
+            <div class="grid sm:grid-cols-2 gap-3 text-left">
+                <a href="calhoun-ga-hvac.html" class="block p-3 border rounded-xl hover:border-orange-400">🔧 HVAC Services Calhoun GA</a>
+                <a href="emergency-hvac-repair.html" class="block p-3 border rounded-xl hover:border-orange-400">🚨 24/7 Emergency HVAC Repair</a>
+                <a href="service-area.html" class="block p-3 border rounded-xl hover:border-orange-400">📍 Service Area Map</a>
+                <a href="reviews.html" class="block p-3 border rounded-xl hover:border-orange-400">⭐ 632+ Google Reviews</a>
+                <a href="insulation-air-sealing.html" class="block p-3 border rounded-xl hover:border-orange-400">🏠 Insulation & Air Sealing</a>
+                <a href="financing.html" class="block p-3 border rounded-xl hover:border-orange-400">💰 Financing & Discounts</a>
+                <a href="about.html" class="block p-3 border rounded-xl hover:border-orange-400">📖 About Anderson HAI</a>
+                <a href="partners.html" class="block p-3 border rounded-xl hover:border-orange-400">🤝 Partners & Certifications</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 text-sm text-gray-500 border-t">
+        <p>Anderson Heating, Air & Insulation — The Paws-itive Choice 🐾</p>
+        <p>519 Pine Street, Calhoun GA 30701 | <a href="tel:+17066290749" class="font-semibold">(706) 629-0749</a> | Licensed CN:003636</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Block staging site — remove when pointing real domain
+User-agent: *
+Disallow: /
+
+Sitemap: https://johnandersonservice.com/sitemap.xml

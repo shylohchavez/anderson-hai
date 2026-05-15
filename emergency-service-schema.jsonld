@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "24/7 Emergency HVAC Repair & Installation",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Anderson Heating, Air & Insulation"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.5029,
+      "longitude": -84.9511
+    },
+    "geoRadius": "60 mi"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": "(706) 629-0749",
+    "availableLanguage": "English",
+    "availableService": "Emergency HVAC Repair"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Emergency Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "No Heat Emergency Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Not Cooling Emergency" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Furnace Breakdown 24/7" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Failure Repair" } }
+    ]
+  },
+  "description": "24/7 emergency HVAC service available 365 days a year. Same-day response for no heat, no AC, and system failures in Calhoun, Dalton, Rome, Cartersville and surrounding NW Georgia. We own the whole house energy bill — not just swapping boxes."
+}

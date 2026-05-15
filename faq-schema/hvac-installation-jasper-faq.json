@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does hvac installation cost in Jasper GA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most hvac installation jobs in Jasper start at Free estimates. Our diagnostic fee is $89, which is waived if we perform the repair. We provide transparent upfront pricing with no hidden fees. Call (706) 629-0749 for an exact quote tailored to your home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is hvac installation available in Jasper GA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Anderson Heating, Air & Insulation proudly serves Jasper GA and all of Northwest Georgia. Our service area includes Jasper, Dalton, Rome, Cartersville, and surrounding counties. We have been the trusted HVAC and insulation experts in the area since 1978."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does hvac installation take in Jasper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most hvac installation jobs in Jasper take 2-6 hours depending on complexity. Simple repairs are often completed the same day. For installations, we typically complete in one day with minimal disruption to your home. We arrive on time and work efficiently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best hvac installation company near Jasper GA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anderson Heating, Air & Insulation is the #1 rated HVAC and home energy company in Northwest Georgia with 632+ Google reviews (4.8 stars). We are the only BPI-certified HVAC company in the area and the only one with an in-house custom sheet metal shop. We take a whole-home energy approach \u2014 most companies just swap the box, we fix the house."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day hvac installation in Jasper GA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer same-day hvac installation in Jasper GA for emergency situations. Our technicians are on call and can often arrive within 2-4 hours. Call (706) 629-0749 now for emergency service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if I need hvac installation in my Jasper home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Signs you need hvac installation include: uneven temperatures, high energy bills, strange noises, poor airflow, or visible damage. Our free whole-home energy audit will identify issues. We look at your entire house \u2014 insulation, air sealing, and HVAC \u2014 to give you the best solution."
+      }
+    }
+  ],
+  "about": {
+    "@type": "HVACBusiness",
+    "name": "Anderson Heating, Air & Insulation",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "519 Pine Street",
+      "addressLocality": "Calhoun",
+      "addressRegion": "GA",
+      "postalCode": "30701"
+    },
+    "telephone": "(706) 629-0749"
+  }
+}
