@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4A1C6B">
     <title>Maintenance Plans | Anderson HAI</title>
-    <meta name="description" content="The Paws-itive Maintenance Plan from Anderson Heating, Air & Insulation (formerly John Anderson Service Company, est. 1978). Priority service, annual HVAC tu...">
+    <meta name="description" content="The Paws-itive Maintenance Plan from Anderson Heating, Air &amp; Insulation (formerly John Anderson Service Company, est. 1978). Priority service, annual HVAC tune-ups &amp; more. Call (706) 629-0749.">
     <meta name="keywords" content="hvac maintenance plan calhoun ga, hvac tune up calhoun ga, ac maintenance calhoun ga, furnace maintenance plan, pawsitive plan anderson heating, anderson heating air insulation formerly john anderson service company">
     <meta property="og:title" content="The Paws-itive Maintenance Plan | Anderson HAI Calhoun GA">
     <meta property="og:description" content="Protect your HVAC investment with priority service, discounted repairs, and annual tune-ups. The smart choice for Calhoun homeowners.">
-    <meta property="og:image" content="https://shylohchavez.github.io/anderson-hai/images/logo.png">
+    <meta property="og:image" content="https://johnandersonservice.com/images/logo.png">
     <meta property="og:image:alt" content="Anderson Heating Air Insulation - The Paws-itive Choice since 1978">
     <meta property="og:url" content="https://johnandersonservice.com/maintenance-plan.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://shylohchavez.github.io/anderson-hai/images/logo.png">
+    <meta name="twitter:image" content="https://johnandersonservice.com/images/logo.png">
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -113,7 +113,6 @@
       "sameAs": [
         "https://www.facebook.com/AndersonHeatAirCo/",
         "https://www.instagram.com/andersonheatairco/",
-        "https://www.youtube.com/@AndersonHeatAirCo",
         "https://www.linkedin.com/company/anderson-heating-air-insulation",
         "https://www.google.com/maps/place/Anderson+Heating,+Air+%26+Insulation/@34.5029,-84.9511,17z"
       ],
@@ -133,13 +132,14 @@
 
 </head>
 <body class="font-sans bg-white text-gray-900">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-anderson-purple focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold" id="skip-to-content">Skip to main content</a>
     <!-- Header / Navigation -->
     <header class="bg-white border-b sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo & Brand -->
                 <div class="flex items-center gap-3">
-                    <img src="images/logo.png loading="lazy" alt="John Anderson & Gypsy - Anderson Heating, Air & Insulation, The Paws-itive Choice since 1978" class="w-12 h-12 object-contain" width="48" height="48">
+                    <img src="images/logo.png" loading="lazy" alt="John Anderson & Gypsy - Anderson Heating, Air & Insulation, The Paws-itive Choice since 1978" class="w-12 h-12 object-contain" width="48" height="48">
                     <div>
                         <div class="font-bold text-2xl brand-purple">Anderson</div>
                         <div class="text-sm -mt-1 text-gray-600">Heating, Air & Insulation</div>
@@ -149,17 +149,17 @@
                 <!-- Nav (updated structure) -->
                 <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
                     <a href="index.html" class="nav-link">Home</a>
-                    <div class="relative group">
-                        <a href="index.html#services" class="nav-link flex items-center gap-1">Services <span class="text-xs ml-0.5">▼</span></a>
-                        <div class="absolute hidden group-hover:block bg-white border shadow-lg rounded-xl py-2 w-64 z-50 pt-2">
-                            <a href="hvac-repair-install.html" class="block px-4 py-2 text-sm hover:bg-gray-50">HVAC Repair &amp; Install</a>
-                            <a href="heat-pump-mini-split.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Heat Pumps &amp; Mini-Splits</a>
-                            <a href="insulation-air-sealing.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Insulation &amp; Air Sealing</a>
-                            <a href="duct-cleaning.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Duct Cleaning &amp; IAQ</a>
-                            <a href="water-heaters.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Water Heaters</a>
-                            <a href="crawlspace-encapsulation.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Crawlspace Encapsulation</a>
-                            <a href="whole-home-energy-audits.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Energy Audits</a>
-                            <a href="windows-doors.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Windows &amp; Doors</a>
+                    <div class="relative group" id="services-dropdown">
+                        <a href="index.html#services" class="nav-link flex items-center gap-1" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Services menu" tabindex="0">Services <span class="text-xs ml-0.5" aria-hidden="true">▼</span></a>
+                        <div class="absolute hidden group-hover:block bg-white border shadow-lg rounded-xl py-2 w-64 z-50 pt-2" role="menu" aria-label="Services submenu">
+                            <a href="hvac-repair-install.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">HVAC Repair &amp; Install</a>
+                            <a href="heat-pump-mini-split.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Heat Pumps &amp; Mini-Splits</a>
+                            <a href="insulation-air-sealing.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Insulation &amp; Air Sealing</a>
+                            <a href="duct-cleaning.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Duct Cleaning &amp; IAQ</a>
+                            <a href="water-heaters.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Water Heaters</a>
+                            <a href="crawlspace-encapsulation.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Crawlspace Encapsulation</a>
+                            <a href="whole-home-energy-audits.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Energy Audits</a>
+                            <a href="windows-doors.html" class="block px-4 py-2 text-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none" role="menuitem">Windows &amp; Doors</a>
                         </div>
                     </div>
                     <a href="maintenance-plan.html" class="nav-link">Maintenance Plan</a>
@@ -202,24 +202,24 @@
                 </button>
             </div>
             <nav class="p-5 space-y-4">
-                <a href="index.html" class="block text-lg font-medium hover:text-anderson-orange">Home</a>
+                <a href="index.html" class="block text-lg font-medium py-2 hover:text-anderson-orange transition-colors">Home</a>
                 <div>
                     <span class="block text-lg font-medium text-gray-500 mb-2">Services</span>
                     <div class="pl-3 space-y-2">
-                        <a href="hvac-repair-install.html" class="block text-sm hover:text-anderson-orange">HVAC Repair &amp; Install</a>
-                        <a href="heat-pump-mini-split.html" class="block text-sm hover:text-anderson-orange">Heat Pumps &amp; Mini-Splits</a>
-                        <a href="insulation-air-sealing.html" class="block text-sm hover:text-anderson-orange">Insulation &amp; Air Sealing</a>
-                        <a href="duct-cleaning.html" class="block text-sm hover:text-anderson-orange">Duct Cleaning &amp; IAQ</a>
-                        <a href="water-heaters.html" class="block text-sm hover:text-anderson-orange">Water Heaters</a>
-                        <a href="crawlspace-encapsulation.html" class="block text-sm hover:text-anderson-orange">Crawlspace Encapsulation</a>
-                        <a href="whole-home-energy-audits.html" class="block text-sm hover:text-anderson-orange">Energy Audits</a>
-                        <a href="windows-doors.html" class="block text-sm hover:text-anderson-orange">Windows &amp; Doors</a>
+                        <a href="hvac-repair-install.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">HVAC Repair &amp; Install</a>
+                        <a href="heat-pump-mini-split.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Heat Pumps &amp; Mini-Splits</a>
+                        <a href="insulation-air-sealing.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Insulation &amp; Air Sealing</a>
+                        <a href="duct-cleaning.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Duct Cleaning &amp; IAQ</a>
+                        <a href="water-heaters.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Water Heaters</a>
+                        <a href="crawlspace-encapsulation.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Crawlspace Encapsulation</a>
+                        <a href="whole-home-energy-audits.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Energy Audits</a>
+                        <a href="windows-doors.html" class="block text-sm py-2 hover:text-anderson-orange transition-colors">Windows &amp; Doors</a>
                     </div>
                 </div>
-                <a href="maintenance-plan.html" class="block text-lg font-medium hover:text-anderson-orange">Maintenance Plan</a>
-                <a href="about.html" class="block text-lg font-medium hover:text-anderson-orange">About</a>
-                <a href="reviews.html" class="block text-lg font-medium hover:text-anderson-orange">Reviews</a>
-                <a href="contact.html" class="block text-lg font-medium hover:text-anderson-orange">Contact</a>
+                <a href="maintenance-plan.html" class="block text-lg font-medium py-2 hover:text-anderson-orange transition-colors">Maintenance Plan</a>
+                <a href="about.html" class="block text-lg font-medium py-2 hover:text-anderson-orange transition-colors">About</a>
+                <a href="reviews.html" class="block text-lg font-medium py-2 hover:text-anderson-orange transition-colors">Reviews</a>
+                <a href="contact.html" class="block text-lg font-medium py-2 hover:text-anderson-orange transition-colors">Contact</a>
                 <div class="pt-4 border-t">
                     <a href="tel:+17066290749" class="flex items-center gap-2 bg-anderson-purple text-white px-5 py-3 rounded-xl font-semibold text-center justify-center">
                         📞 (706) 629-0749
@@ -395,39 +395,38 @@
                 </div>
                 <div>
                     <div class="font-semibold text-white mb-3">Services</div>
-                    <div class="space-y-1 text-xs">
-                        <a href="hvac-repair-install.html" class="block hover:text-white">HVAC Repair & Install</a>
-                        <a href="heat-pump-mini-split.html" class="block hover:text-white">Heat Pumps & Mini-Splits</a>
-                        <a href="insulation-air-sealing.html" class="block hover:text-white">Insulation & Air Sealing</a>
-                        <a href="duct-cleaning.html" class="block hover:text-white">Duct Cleaning</a>
-                        <a href="water-heaters.html" class="block hover:text-white">Water Heaters</a>
-                        <a href="crawlspace-encapsulation.html" class="block hover:text-white">Crawlspace Encapsulation</a>
+                    <div class="space-y-0 text-xs">
+                        <a href="hvac-repair-install.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">HVAC Repair & Install</a>
+                        <a href="heat-pump-mini-split.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Heat Pumps & Mini-Splits</a>
+                        <a href="insulation-air-sealing.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Insulation & Air Sealing</a>
+                        <a href="duct-cleaning.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Duct Cleaning</a>
+                        <a href="water-heaters.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Water Heaters</a>
+                        <a href="crawlspace-encapsulation.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Crawlspace Encapsulation</a>
                     </div>
                 </div>
                 <div>
                     <div class="font-semibold text-white mb-3">Company</div>
-                    <div class="space-y-1 text-xs">
-                        <a href="about.html" class="block hover:text-white">About Us (John & Gypsy's Story)</a>
-                        <a href="reviews.html" class="block hover:text-white">632+ Google Reviews</a>
-                        <a href="contact.html" class="block hover:text-white">Contact & Free Estimate</a>
+                    <div class="space-y-0 text-xs">
+                        <a href="about.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">About Us (John & Gypsy's Story)</a>
+                        <a href="reviews.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">632+ Google Reviews</a>
+                        <a href="contact.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Contact & Free Estimate</a>
                     </div>
                 </div>
                 <div>
                     <div class="font-semibold text-white mb-3">Resources</div>
-                    <div class="space-y-1 text-xs">
-                        <a href="maintenance-plan.html" class="block hover:text-white">Maintenance Plans</a>
-                        <a href="financing.html" class="block hover:text-white">Financing Options</a>
-                        <a href="service-area.html" class="block hover:text-white">Service Area</a>
-                        <a href="blog.html" class="block hover:text-white">Blog & Tips</a>
+                    <div class="space-y-0 text-xs">
+                        <a href="maintenance-plan.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Maintenance Plans</a>
+                        <a href="financing.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Financing Options</a>
+                        <a href="service-area.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Service Area</a>
+                        <a href="blog.html" class="block py-2 hover:text-white hover:underline cursor-pointer transition-colors">Blog & Tips</a>
                     </div>
                 </div>
             </div>
             <div class="mt-8 flex justify-center gap-6 text-sm">
-                <a href="https://www.facebook.com/AndersonHeatAirCo/" class="hover:text-white">Facebook</a>
-                <a href="https://www.instagram.com/andersonheatairco/" class="hover:text-white">Instagram</a>
-                <a href="https://www.youtube.com/@AndersonHeatAirCo" class="hover:text-white">YouTube</a>
-                <a href="https://www.linkedin.com/company/anderson-heating-air-insulation" class="hover:text-white">LinkedIn</a>
-                <a href="https://www.tiktok.com/@andersonheatairco" class="hover:text-white">TikTok</a>
+                <a href="https://www.facebook.com/AndersonHeatAirCo/" class="py-2 hover:text-white hover:underline cursor-pointer transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/andersonheatairco/" class="py-2 hover:text-white hover:underline cursor-pointer transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/company/anderson-heating-air-insulation" class="py-2 hover:text-white hover:underline cursor-pointer transition-colors">LinkedIn</a>
+                <a href="https://www.tiktok.com/@andersonheatairco" class="py-2 hover:text-white hover:underline cursor-pointer transition-colors">TikTok</a>
             </div>
             <div class="border-t border-white/20 mt-12 pt-8 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
                 <div>© 2026 Anderson Heating, Air & Insulation. John Anderson Service Company, Inc. est. January 1978. All rights reserved.</div>
@@ -472,5 +471,70 @@
             Call Now: (706) 629-0749
         </a>
     </div>
+
+    <!-- Keyboard Navigation for Services Dropdown -->
+    <script id="services-keyboard-nav">
+    (function(){
+        var dropdown = document.getElementById('services-dropdown');
+        if (!dropdown) return;
+        var trigger = dropdown.querySelector('[aria-haspopup]');
+        var menu = dropdown.querySelector('[role="menu"]');
+        if (!trigger || !menu) return;
+        var items = menu.querySelectorAll('[role="menuitem"]');
+        var isOpen = false;
+
+        function openMenu() {
+            menu.classList.remove('hidden');
+            menu.classList.add('block');
+            trigger.setAttribute('aria-expanded', 'true');
+            isOpen = true;
+        }
+        function closeMenu() {
+            menu.classList.add('hidden');
+            menu.classList.remove('block');
+            trigger.setAttribute('aria-expanded', 'false');
+            isOpen = false;
+        }
+
+        // Keyboard on trigger
+        trigger.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                if (isOpen) { closeMenu(); } else { openMenu(); if(items.length) items[0].focus(); }
+            }
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                openMenu();
+                if(items.length) items[0].focus();
+            }
+            if (e.key === 'Escape') { closeMenu(); trigger.focus(); }
+        });
+
+        // Keyboard within menu items
+        items.forEach(function(item, idx) {
+            item.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    if (idx < items.length - 1) items[idx+1].focus();
+                }
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    if (idx > 0) items[idx-1].focus(); else trigger.focus();
+                }
+                if (e.key === 'Escape') { closeMenu(); trigger.focus(); }
+                if (e.key === 'Tab') { closeMenu(); }
+            });
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (isOpen && !dropdown.contains(e.target)) closeMenu();
+        });
+
+        // Keep hover behavior working alongside keyboard
+        dropdown.addEventListener('mouseenter', function() { openMenu(); });
+        dropdown.addEventListener('mouseleave', function() { closeMenu(); });
+    })();
+    </script>
 </body>
 </html>
