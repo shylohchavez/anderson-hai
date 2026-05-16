@@ -27,8 +27,8 @@
 .h-7 { height: 1.75rem; }
 
 @media (min-width: 768px) {
-  .md\:hidden { display: none; }
-  .md\:flex { display: flex; }
+  .md\:hidden { display: none !important; }
+  .md\:flex { display: flex !important; }
 }
 
 /* MISSING CORE TAILWIND CLASSES - Emergency Fix */
