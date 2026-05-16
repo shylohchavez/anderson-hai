@@ -30,3 +30,17 @@
   .md\:hidden { display: none; }
   .md\:flex { display: flex; }
 }
+
+/* MISSING CORE TAILWIND CLASSES - Emergency Fix */
+.-top-10 { top: -2.5rem; }
+.focus\:top-2:focus { top: 0.5rem; }
+.focus\:left-2:focus { left: 0.5rem; }
+.z-\[100\] { z-index: 100; }
+.focus\:z-\[100\]:focus { z-index: 100; }
+.focus\:bg-white:focus { background-color: #ffffff; }
+.focus\:px-4:focus { padding-left: 1rem; padding-right: 1rem; }
+.focus\:py-2:focus { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.focus\:rounded-lg:focus { border-radius: 0.5rem; }
+.focus\:shadow-lg:focus { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.text-anderson-purple { color: #4A1C6B; }
+.focus\:text-anderson-purple:focus { color: #4A1C6B; }
