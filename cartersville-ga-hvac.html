@@ -262,9 +262,20 @@
             close=document.getElementById('mobile-menu-close'),
             overlay=document.getElementById('mobile-menu-overlay');
         if(!btn||!menu)return;
+
+        // Open menu
         btn.addEventListener('click',function(){menu.classList.remove('hidden')});
-        close.addEventListener('click',function(){menu.classList.add('hidden')});
-        overlay.addEventListener('click',function(){menu.classList.add('hidden')});
+
+        // Close menu
+        function closeMenu(){menu.classList.add('hidden')}
+        if(close)close.addEventListener('click',closeMenu);
+        if(overlay)overlay.addEventListener('click',closeMenu);
+
+        // Auto-close when any nav link is clicked
+        var links=menu.querySelectorAll('a[href]');
+        for(var i=0;i<links.length;i++){
+            links[i].addEventListener('click',function(){setTimeout(closeMenu,100)});
+        }
     })();
     </script>
 

@@ -141,7 +141,7 @@
                 </div>
 
                 <!-- Nav -->
-                                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                                <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
                     <a href="index.html" class="nav-link">Home</a>
                     <div class="relative group" id="services-dropdown">
                         <a href="index.html#services" class="nav-link flex items-center gap-1" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Services menu" tabindex="0">Services <span class="text-xs ml-0.5" aria-hidden="true">▼</span></a>
@@ -169,7 +169,7 @@
                         Free Estimate
                     </a>
                     <!-- Mobile hamburger -->
-                    <button id="mobile-menu-btn" class="lg:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 border border-gray-300" aria-label="Open menu" style="z-index: 9999;">
+                    <button id="mobile-menu-btn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 border border-gray-300" aria-label="Open menu">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -224,22 +224,20 @@
             close=document.getElementById('mobile-menu-close'),
             overlay=document.getElementById('mobile-menu-overlay');
         if(!btn||!menu)return;
-        
+
         // Open menu
         btn.addEventListener('click',function(){menu.classList.remove('hidden')});
-        
+
         // Close menu
-        function closeMenu() { menu.classList.add('hidden'); }
-        close.addEventListener('click', closeMenu);
-        overlay.addEventListener('click', closeMenu);
-        
-        // CRITICAL FIX: Close menu when any link is clicked
-        var menuLinks = menu.querySelectorAll('a[href]');
-        menuLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
-                setTimeout(closeMenu, 100); // Small delay for navigation
-            });
-        });
+        function closeMenu(){menu.classList.add('hidden')}
+        if(close)close.addEventListener('click',closeMenu);
+        if(overlay)overlay.addEventListener('click',closeMenu);
+
+        // Auto-close when any nav link is clicked
+        var links=menu.querySelectorAll('a[href]');
+        for(var i=0;i<links.length;i++){
+            links[i].addEventListener('click',function(){setTimeout(closeMenu,100)});
+        }
     })();
     </script>
 
