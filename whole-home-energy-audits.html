@@ -343,8 +343,10 @@
     </script>
 
     <!-- Hero -->
-    <section class="hero-mesh text-white py-16">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="hero-mesh text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left">
             <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full text-sm mb-6">
                 <span class="font-semibold">EST. 1978</span> 
                 <span class="opacity-70">•</span> 
@@ -359,11 +361,11 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="tel:+17066290749" 
-                   class="inline-flex items-center justify-center gap-3 bg-white text-anderson-purple px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/95 cta-button pulse-glow">
+                   class="inline-flex items-center lg:justify-start gap-3 bg-white text-anderson-purple px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/95 cta-button pulse-glow">
                     <span>Call Now: (706) 629-0749</span>
                 </a>
                 <a href="contact.html" 
-                   class="inline-flex items-center justify-center gap-3 border-2 border-white/70 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 cta-button">
+                   class="inline-flex items-center lg:justify-start gap-3 border-2 border-white/70 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 cta-button">
                     Request Free In-Home Estimate
                 </a>
             </div>
@@ -373,21 +375,17 @@
                 <div>BPI • NATE • ACCA Certified</div>
             </div>
         </div>
-    </section>
-
-    <!-- Hero photo banner -->
-    <div class="bg-anderson-purple/5 border-b">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div class="rounded-3xl overflow-hidden shadow-xl">
-                <picture>
-                    <source srcset="images/photos/anderson-023.webp" type="image/webp">
-                    <img src="images/photos/anderson-023.jpg"
-                         alt="Anderson Heating, Air &amp; Insulation BPI-certified technician performing a blower-door test in a Northwest Georgia home — the signature diagnostic for measuring whole-house air leakage. The illuminated blower fan and Minneapolis Blower Door fabric are visible in the doorway behind him."
-                         class="w-full h-auto block" loading="lazy" width="1024" height="1536">
-                </picture>
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20">
+                        <picture>
+                            <source srcset="images/photos/anderson-023.webp" type="image/webp">
+                            <img src="images/photos/anderson-023.jpg" alt="Anderson Heating, Air &amp; Insulation — Whole Home Energy Audits" class="w-full h-auto block" loading="eager" width="1024" height="1536">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
         <!-- Quick Answer (AI SEO) -->
     <section class="section-cream border-b">
