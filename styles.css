@@ -134,10 +134,11 @@ html, body {
               box-shadow .35s cubic-bezier(.2,.8,.2,1),
               border-color .25s ease;
   will-change: transform;
+  box-shadow: 0 4px 14px -6px rgba(74, 28, 107, 0.10), 0 2px 4px -2px rgba(0,0,0,0.05);
 }
 .lift-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 24px 40px -12px rgba(74, 28, 107, 0.22), 0 8px 16px -8px rgba(0,0,0,0.12);
+  box-shadow: 0 24px 40px -12px rgba(74, 28, 107, 0.28), 0 8px 16px -8px rgba(0,0,0,0.14);
 }
 
 /* ---------- Scroll fade-in ---------- */
@@ -166,8 +167,30 @@ html, body {
 }
 
 /* ---------- Section rhythm helpers ---------- */
-.section-soft { background: linear-gradient(180deg, #ffffff 0%, #faf7fc 100%); }
-.section-cream { background: #fdfaf6; }
+/* Warmer, more visible cream — peach/ivory wash */
+.section-cream { background: linear-gradient(180deg, #fdf3e6 0%, #fbeedd 100%); }
+/* Stronger lavender wash for variety */
+.section-soft  { background: linear-gradient(180deg, #f4ecf7 0%, #ede1f3 100%); }
+/* Warm orange wash — for accent sections */
+.section-warm  { background: linear-gradient(135deg, #fff4ec 0%, #ffe6d0 100%); }
+/* Cool deep-purple wash — premium feel */
+.section-cool  { background: linear-gradient(135deg, #efe6f5 0%, #e3d3ef 100%); }
+
+/* CSS-only subtle dot pattern — no image weight */
+.pattern-dots {
+  background-image: radial-gradient(rgba(74, 28, 107, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+.pattern-dots-orange {
+  background-image: radial-gradient(rgba(196, 69, 0, 0.10) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Section divider — orange gradient strip */
+.section-divider {
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, #C45500 20%, #ff8a3d 50%, #C45500 80%, transparent 100%);
+}
 
 /* ---------- Headline accent underline ---------- */
 .headline-accent {
