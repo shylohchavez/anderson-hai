@@ -20,96 +20,91 @@
     
     <!-- HVAC-First Energy Rebate Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Anderson Heating, Air & Insulation",
+  "alternateName": "John Anderson Service Company, Inc.",
+  "description": "Official HER/HEAR program HVAC contractor in Georgia. BPI-certified energy efficiency experts with 632+ reviews. HVAC rebates up to $14,000+.",
+  "url": "https://johnandersonservice.com/hvac-energy-rebates-authority.html",
+  "telephone": "(706) 629-0749",
+  "email": "info@johnandersonservice.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "519 Pine Street",
+    "addressLocality": "Calhoun",
+    "addressRegion": "GA",
+    "postalCode": "30701",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "34.5029",
+    "longitude": "-84.9511"
+  },
+  "openingHours": "Mo-Fr 07:30-17:00",
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "34.5029",
+      "longitude": "-84.9511"
+    },
+    "geoRadius": "80000"
+  },
+  "hasCredential": [
     {
-        "@context": "https://schema.org",
-        "@type": "HVACBusiness",
-        "name": "Anderson Heating, Air & Insulation",
-        "alternateName": "John Anderson Service Company, Inc.",
-        "description": "Official HER/HEAR program HVAC contractor in Georgia. BPI-certified energy efficiency experts with 632+ reviews. HVAC rebates up to $14,000+.",
-        "url": "https://johnandersonservice.com/hvac-energy-rebates-authority.html",
-        "telephone": "(706) 629-0749",
-        "email": "info@johnandersonservice.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "519 Pine Street",
-            "addressLocality": "Calhoun",
-            "addressRegion": "GA", 
-            "postalCode": "30701",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "34.5029",
-            "longitude": "-84.9511"
-        },
-        "openingHours": "Mo-Fr 07:30-17:00",
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "34.5029",
-                "longitude": "-84.9511"
-            },
-            "geoRadius": "80000"
-        },
-        "hasCredential": [
-            {
-                "@type": "EducationalOccupationalCredential",
-                "name": "BPI Certified Energy Auditor",
-                "credentialCategory": "Energy Efficiency Certification"
-            },
-            {
-                "@type": "EducationalOccupationalCredential", 
-                "name": "HER/HEAR Program Contractor",
-                "credentialCategory": "Georgia Energy Rebate Program Authorization"
-            }
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "HVAC Energy Rebate Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "HER/HEAR HVAC Rebates",
-                        "description": "Official Georgia HER/HEAR program HVAC energy rebates up to $14,000+"
-                    }
-                },
-                {
-                    "@type": "Offer", 
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "BPI Energy Audits",
-                        "description": "Certified energy audits for HVAC efficiency rebate qualification"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service", 
-                        "name": "HVAC Energy Efficiency Upgrades",
-                        "description": "HVAC system upgrades that qualify for Georgia energy rebates"
-                    }
-                }
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "632"
-        },
-        "slogan": "Georgia's Official HER/HEAR Program HVAC Contractor",
-        "foundingDate": "1978",
-        "areaServed": [
-            "Northwest Georgia",
-            "Calhoun, GA",
-            "Dalton, GA", 
-            "Rome, GA",
-            "Cartersville, GA"
-        ]
+      "@type": "EducationalOccupationalCredential",
+      "name": "BPI Certified Energy Auditor",
+      "credentialCategory": "Energy Efficiency Certification"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "HER/HEAR Program Contractor",
+      "credentialCategory": "Georgia Energy Rebate Program Authorization"
     }
-    </script>
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "HVAC Energy Rebate Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "HER/HEAR HVAC Rebates",
+          "description": "Official Georgia HER/HEAR program HVAC energy rebates up to $14,000+"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BPI Energy Audits",
+          "description": "Certified energy audits for HVAC efficiency rebate qualification"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "HVAC Energy Efficiency Upgrades",
+          "description": "HVAC system upgrades that qualify for Georgia energy rebates"
+        }
+      }
+    ]
+  },
+  "slogan": "Georgia's Official HER/HEAR Program HVAC Contractor",
+  "foundingDate": "1978",
+  "areaServed": [
+    "Northwest Georgia",
+    "Calhoun, GA",
+    "Dalton, GA",
+    "Rome, GA",
+    "Cartersville, GA"
+  ]
+}
+</script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/anderson-favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/anderson-favicon-16.png">
     <link rel="icon" type="image/png" sizes="48x48" href="images/anderson-favicon-48.png">
