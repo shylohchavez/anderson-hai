@@ -223,43 +223,53 @@ html, body {
    CUSTOM LAYER — Dopamine pass
    =========================================== */
 
-/* Display-size animated stats */
+/* Display-size animated stats — scales DOWN gracefully on mobile so "10,707+" fits in narrow cards */
 .stat-display {
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(1.75rem, 7vw, 4.5rem);
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   font-variant-numeric: tabular-nums;
   background: linear-gradient(135deg, #C45500 0%, #ff8a3d 50%, #4A1C6B 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
+  white-space: nowrap;
 }
 
 /* Stat card with photo thumbnail */
 .stat-card {
   position: relative;
   background: white;
-  border-radius: 1.5rem;
-  padding: 1.5rem 1rem 1.25rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem 0.5rem 1rem;
   box-shadow: 0 4px 14px -6px rgba(74, 28, 107, 0.12), 0 2px 4px -2px rgba(0,0,0,0.04);
   border: 1px solid rgba(74, 28, 107, 0.08);
   transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+}
+@media (min-width: 768px) {
+  .stat-card { padding: 1.5rem 1rem 1.25rem; border-radius: 1.5rem; }
 }
 .stat-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 36px -12px rgba(74, 28, 107, 0.25), 0 6px 12px -6px rgba(0,0,0,0.1);
 }
 .stat-card-thumb {
-  width: 64px; height: 64px;
+  width: 48px; height: 48px;
   border-radius: 9999px;
   border: 3px solid #fff;
   box-shadow: 0 4px 12px -2px rgba(74, 28, 107, 0.3);
   object-fit: cover;
-  margin: -50px auto 12px;
+  margin: -36px auto 10px;
   display: block;
   background: #f4ecf7;
+}
+@media (min-width: 768px) {
+  .stat-card-thumb {
+    width: 64px; height: 64px;
+    margin: -50px auto 12px;
+  }
 }
 
 /* Paw bounce on hover (and a subtle idle wiggle every few seconds) */
@@ -347,15 +357,18 @@ html, body {
   opacity: 1; transform: translateY(0);
 }
 
-/* Cinematic image-as-background hero strip */
+/* Cinematic image-as-background hero strip — height scales with content but caps reasonably */
 .image-hero {
   position: relative;
-  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   isolation: isolate;
+  padding: 4rem 0;
+}
+@media (min-width: 768px) {
+  .image-hero { padding: 6rem 0; }
 }
 .image-hero-bg {
   position: absolute; inset: 0; z-index: -2;
@@ -373,8 +386,9 @@ html, body {
 .image-hero-content {
   text-align: center;
   color: white;
-  padding: 4rem 1.5rem;
+  padding: 0 1.5rem;
   max-width: 56rem;
+  width: 100%;
 }
 
 /* Decorative SVG wave divider */
