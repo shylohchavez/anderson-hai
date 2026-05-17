@@ -123,7 +123,7 @@
 
         // ============ LAYER 2: Trade-city pattern detection ============
         // Handles /[trade]/[city]/ and /[trade]/[city]/[anything-deeper]/
-        var validCities = ['calhoun','dalton','rome','cartersville','adairsville','chatsworth','jasper','ellijay','fairmount','resaca','lafayette'];
+        var validCities = ['calhoun','dalton','rome','cartersville','adairsville','chatsworth','jasper','ellijay','fairmount','resaca','lafayette','fort-oglethorpe','ringgold'];
 
         // Special values:
         //   'HVAC_CITY' -> /[city]-ga-hvac.html (the city's HVAC page)
@@ -205,7 +205,7 @@
         }
 
         // ============ LAYER 3: City-only pattern fallback ============
-        var cityMatch = path.match(/\/(calhoun|dalton|rome|cartersville|adairsville|chatsworth|jasper|ellijay|fairmount|resaca|lafayette)/i);
+        var cityMatch = path.match(/\/(calhoun|dalton|rome|cartersville|adairsville|chatsworth|jasper|ellijay|fairmount|resaca|lafayette|fort-oglethorpe|ringgold)/i);
         if (cityMatch) {
             return go('/' + cityMatch[1].toLowerCase() + '-ga.html');
         }
