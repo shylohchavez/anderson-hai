@@ -284,8 +284,9 @@
 
             <!-- Form -->
             <div>
-                <form action="mailto:workorders@johnandersonservice.com" method="POST" enctype="text/plain" id="contact-form" class="space-y-5">
+                <form action="https://formspree.io/f/xdajndja" method="POST" id="contact-form" class="space-y-5">
                     <input type="hidden" name="_subject" value="New Contact from Anderson HAI Website">
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Full Name</label>
                         <input type="text" name="name" class="w-full border border-gray-300 rounded-2xl px-5 py-3.5 text-lg" placeholder="Your name" required>
@@ -462,36 +463,38 @@
         if (!form) return;
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            var name = form.querySelector('[name="name"]').value;
-            var phone = form.querySelector('[name="phone"]').value;
-            var email = form.querySelector('[name="email"]').value;
-            var service = form.querySelector('[name="service_needed"]').value;
-            var message = form.querySelector('[name="message"]').value;
-            
-            var subject = encodeURIComponent('Website Lead: ' + service + ' - ' + name);
-            var body = encodeURIComponent(
-                'Name: ' + name + '\n' +
-                'Phone: ' + phone + '\n' +
-                'Email: ' + email + '\n' +
-                'Service: ' + service + '\n' +
-                'Message: ' + message
-            );
-            
-            // Open mailto link
-            window.location.href = 'mailto:workorders@johnandersonservice.com?subject=' + subject + '&body=' + body;
-            
-            // Show confirmation
             var btn = form.querySelector('button[type="submit"]');
-            btn.textContent = '✓ Opening Email Client...';
-            btn.style.backgroundColor = '#16a34a';
-            
-            setTimeout(function(){
-                // Show fallback info
+            var originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function(response) {
+                if (response.ok) {
+                    form.reset();
+                    btn.textContent = '✓ Sent! We’ll be in touch';
+                    btn.style.backgroundColor = '#16a34a';
+                    var notice = document.createElement('div');
+                    notice.className = 'mt-4 p-4 bg-green-50 border border-green-200 rounded-xl text-sm text-green-800';
+                    notice.innerHTML = '<strong>Thanks!</strong> We got your request and will reach out within one business day. Need it sooner? Call <a href="tel:+17066290749" class="font-bold underline">(706) 629-0749</a>.';
+                    form.appendChild(notice);
+                } else {
+                    throw new Error('Submission failed');
+                }
+            }).catch(function() {
+                btn.disabled = false;
+                btn.textContent = originalText;
+                btn.style.backgroundColor = '';
+                var existing = form.querySelector('.form-error-notice');
+                if (existing) existing.remove();
                 var notice = document.createElement('div');
-                notice.className = 'mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800';
-                notice.innerHTML = '<strong>Prefer to call?</strong> Reach us directly at <a href="tel:+17066290749" class="font-bold underline">(706) 629-0749</a>. We typically answer within 30 seconds during business hours.';
+                notice.className = 'form-error-notice mt-4 p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-800';
+                notice.innerHTML = '<strong>Something went wrong submitting your request.</strong> Please call us directly at <a href="tel:+17066290749" class="font-bold underline">(706) 629-0749</a> or email <a href="mailto:workorders@johnandersonservice.com" class="font-bold underline">workorders@johnandersonservice.com</a>.';
                 form.appendChild(notice);
-            }, 1500);
+            });
         });
     })();
     </script>
