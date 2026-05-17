@@ -192,6 +192,16 @@ html, body {
   background: linear-gradient(90deg, transparent 0%, #C45500 20%, #ff8a3d 50%, #C45500 80%, transparent 100%);
 }
 
+/* Constrain hero-mesh split-hero photo column to a reasonable height — prevents towering on short hero text */
+.hero-mesh .lg\:col-span-5 picture,
+.hero-mesh .lg\:col-span-5 picture img {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ---------- Headline accent underline ---------- */
 .headline-accent {
   display: inline-block;
@@ -223,12 +233,12 @@ html, body {
    CUSTOM LAYER — Dopamine pass
    =========================================== */
 
-/* Display-size animated stats — scales DOWN gracefully on mobile so "10,707+" fits in narrow cards */
+/* Stat display — capped to fit four-up cards even at 1024px */
 .stat-display {
-  font-size: clamp(1.75rem, 7vw, 4.5rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
   background: linear-gradient(135deg, #C45500 0%, #ff8a3d 50%, #4A1C6B 100%);
   background-clip: text;
@@ -238,37 +248,38 @@ html, body {
   white-space: nowrap;
 }
 
-/* Stat card with photo thumbnail */
+/* Stat card — photo INSIDE the card (no negative-margin overlap) */
 .stat-card {
   position: relative;
   background: white;
   border-radius: 1.25rem;
-  padding: 1.25rem 0.5rem 1rem;
+  padding: 1.25rem 0.75rem;
   box-shadow: 0 4px 14px -6px rgba(74, 28, 107, 0.12), 0 2px 4px -2px rgba(0,0,0,0.04);
   border: 1px solid rgba(74, 28, 107, 0.08);
   transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+  text-align: center;
 }
 @media (min-width: 768px) {
-  .stat-card { padding: 1.5rem 1rem 1.25rem; border-radius: 1.5rem; }
+  .stat-card { padding: 1.75rem 1rem; border-radius: 1.5rem; }
 }
 .stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 36px -12px rgba(74, 28, 107, 0.25), 0 6px 12px -6px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 30px -12px rgba(74, 28, 107, 0.22), 0 6px 12px -6px rgba(0,0,0,0.08);
 }
 .stat-card-thumb {
-  width: 48px; height: 48px;
+  width: 44px; height: 44px;
   border-radius: 9999px;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 12px -2px rgba(74, 28, 107, 0.3);
+  border: 2px solid #fff;
+  box-shadow: 0 4px 10px -2px rgba(74, 28, 107, 0.25);
   object-fit: cover;
-  margin: -36px auto 10px;
+  margin: 0 auto 0.75rem;
   display: block;
   background: #f4ecf7;
 }
 @media (min-width: 768px) {
   .stat-card-thumb {
-    width: 64px; height: 64px;
-    margin: -50px auto 12px;
+    width: 56px; height: 56px;
+    margin: 0 auto 1rem;
   }
 }
 
