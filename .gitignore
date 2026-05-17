@@ -1,2 +1,45 @@
 node_modules/
 package-lock.json
+
+# Secrets / API keys — never commit these
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+credentials.json
+*api*key*
+*token*
+
+# Internal/private data folders — keep website data clean
+data/archive/
+data/private/
+data/internal/
+
+# OpenClaw workspace (if accidentally synced)
+.openclaw/
+openclaw-workspace/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Build artifacts
+*.bak
+*.bak-seo
+*.backup
+*.backup_*
+
+# Python virtual environments / cache
+__pycache__/
+venv/
+.venv/
+*.pyc
+
+# Logs / data dumps
+*.log
+*.dump

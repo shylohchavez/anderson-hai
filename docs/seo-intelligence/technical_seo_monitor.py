@@ -20,7 +20,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 
-SCRAPE_DO_TOKEN = os.environ.get("SCRAPE_DO_TOKEN", "SCRAPE_DO_TOKEN_REMOVED")
+SCRAPE_DO_TOKEN = os.environ.get("SCRAPE_DO_TOKEN")
 DATA_DIR = Path(os.path.expanduser("~/.openclaw/workspace/data/seo-intelligence"))
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

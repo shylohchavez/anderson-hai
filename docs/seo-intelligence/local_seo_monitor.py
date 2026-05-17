@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-SCRAPE_DO_TOKEN = os.environ.get("SCRAPE_DO_TOKEN", "SCRAPE_DO_TOKEN_REMOVED")
+SCRAPE_DO_TOKEN = os.environ.get("SCRAPE_DO_TOKEN")
 DATA_DIR = Path(os.path.expanduser("~/.openclaw/workspace/data/seo-intelligence"))
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

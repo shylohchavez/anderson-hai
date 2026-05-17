@@ -469,7 +469,7 @@ class AndersonReviewAutomation:
 
 def main():
     """Main entry point"""
-    API_TOKEN = "SCRAPE_DO_TOKEN_REMOVED"
+    API_TOKEN = os.environ.get("SCRAPE_DO_TOKEN")
     
     automation = AndersonReviewAutomation(API_TOKEN)
     result = automation.run_full_sync()
