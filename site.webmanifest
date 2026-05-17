@@ -8,8 +8,19 @@
   "theme_color": "#4A1C6B",
   "icons": [
     {
-      "src": "/images/logo.png",
-      "sizes": "111x33",
+      "src": "/images/anderson-social-logo.jpg",
+      "sizes": "1080x1080",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/anderson-favicon.png",
+      "sizes": "504x260",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/anderson-logo-full.png",
+      "sizes": "504x260",
       "type": "image/png"
     }
   ]
