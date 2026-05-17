@@ -219,3 +219,204 @@ html, body {
 }
 .link-underline:hover { background-size: 100% 1px; }
 
+/* ===========================================
+   CUSTOM LAYER — Dopamine pass
+   =========================================== */
+
+/* Display-size animated stats */
+.stat-display {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(135deg, #C45500 0%, #ff8a3d 50%, #4A1C6B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Stat card with photo thumbnail */
+.stat-card {
+  position: relative;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1rem 1.25rem;
+  box-shadow: 0 4px 14px -6px rgba(74, 28, 107, 0.12), 0 2px 4px -2px rgba(0,0,0,0.04);
+  border: 1px solid rgba(74, 28, 107, 0.08);
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+}
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 36px -12px rgba(74, 28, 107, 0.25), 0 6px 12px -6px rgba(0,0,0,0.1);
+}
+.stat-card-thumb {
+  width: 64px; height: 64px;
+  border-radius: 9999px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px -2px rgba(74, 28, 107, 0.3);
+  object-fit: cover;
+  margin: -50px auto 12px;
+  display: block;
+  background: #f4ecf7;
+}
+
+/* Paw bounce on hover (and a subtle idle wiggle every few seconds) */
+@keyframes pawWiggle {
+  0%, 86%, 100% { transform: rotate(0deg) scale(1); }
+  88% { transform: rotate(-8deg) scale(1.1); }
+  92% { transform: rotate(8deg) scale(1.1); }
+  96% { transform: rotate(-4deg) scale(1.05); }
+}
+.paw-bounce {
+  display: inline-block;
+  animation: pawWiggle 6s ease-in-out infinite;
+  transform-origin: center;
+}
+.paw-bounce:hover {
+  animation-duration: 0.6s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .paw-bounce { animation: none; }
+}
+
+/* Real Work gallery — image-grid with hover zoom */
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .work-gallery { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+}
+.work-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: #f4ecf7;
+  box-shadow: 0 6px 18px -6px rgba(74, 28, 107, 0.18);
+  aspect-ratio: 3 / 4;
+  transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s cubic-bezier(.2,.8,.2,1);
+}
+.work-gallery-item.tall { aspect-ratio: 3 / 4; }
+.work-gallery-item.wide { aspect-ratio: 4 / 3; }
+@media (min-width: 768px) {
+  .work-gallery-item.feature {
+    grid-column: span 2; grid-row: span 2;
+    aspect-ratio: 1 / 1;
+  }
+}
+.work-gallery-item img,
+.work-gallery-item picture {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform .6s cubic-bezier(.2,.8,.2,1);
+}
+.work-gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px -14px rgba(74, 28, 107, 0.35);
+}
+.work-gallery-item:hover img,
+.work-gallery-item:hover picture img {
+  transform: scale(1.08);
+}
+.work-gallery-item::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(74, 28, 107, 0.55) 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+.work-gallery-item:hover::after { opacity: 1; }
+.work-gallery-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .35s ease, transform .35s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+.work-gallery-item:hover .work-gallery-caption {
+  opacity: 1; transform: translateY(0);
+}
+
+/* Cinematic image-as-background hero strip */
+.image-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+.image-hero-bg {
+  position: absolute; inset: 0; z-index: -2;
+}
+.image-hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
+.image-hero::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(74,28,107,0.55) 0%, rgba(74,28,107,0.75) 70%, rgba(30,10,50,0.85) 100%);
+}
+.image-hero-content {
+  text-align: center;
+  color: white;
+  padding: 4rem 1.5rem;
+  max-width: 56rem;
+}
+
+/* Decorative SVG wave divider */
+.wave-divider {
+  display: block; width: 100%; height: 60px;
+  fill: currentColor;
+}
+.wave-divider-up { transform: rotate(180deg); }
+
+/* Animated underline accent on big headings */
+.heading-pop {
+  position: relative;
+  display: inline-block;
+}
+.heading-pop::before {
+  content: "";
+  position: absolute;
+  left: -8px; right: -8px; bottom: -2px;
+  height: 12px;
+  background: linear-gradient(90deg, rgba(196, 69, 0, 0.35), rgba(255, 138, 61, 0.25));
+  z-index: -1;
+  border-radius: 9999px;
+}
+
+/* Decorative orange "spark" dots for visual interest near headings */
+.spark-dot {
+  display: inline-block;
+  width: 8px; height: 8px; border-radius: 9999px;
+  background: #C45500;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+/* Subtle scroll-cued reveal beyond fade-in-up — for staggered children */
+.stagger > * { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.8,.2,1); }
+.stagger.in-view > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0ms; }
+.stagger.in-view > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 80ms; }
+.stagger.in-view > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 160ms; }
+.stagger.in-view > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 240ms; }
+.stagger.in-view > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 320ms; }
+.stagger.in-view > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 400ms; }
+@media (prefers-reduced-motion: reduce) {
+  .stagger > * { opacity: 1; transform: none; }
+}
+
