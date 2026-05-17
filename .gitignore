@@ -1,0 +1,63 @@
+node_modules/
+package-lock.json
+
+# =============================================================================
+# SECURITY - SENSITIVE DATA PROTECTION
+# =============================================================================
+
+# Secrets / API keys — never commit these
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+credentials.json
+**/*api*key*
+**/*secret*
+**/*token*
+**/*password*
+**/credentials.*
+**/auth.*
+
+# Specific Patterns That Leaked (CRITICAL)
+*190ad096954c4bae82e2855d5fa939a853a0e4609be*
+*Bearer *
+*Authorization: *
+
+# Internal/private data folders — keep website data clean
+data/archive/
+data/private/
+data/internal/
+**/backup/
+**/temp/
+**/*private*
+**/*personal*
+
+# OpenClaw workspace (if accidentally synced)
+.openclaw/
+openclaw-workspace/
+
+# Logs / data dumps
+**/*.log
+*.log
+*.dump
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+**/*.swp
+*~
+**/.idea/
+**/.vscode/
+
+# Build artifacts
+*.bak
+*.bak-seo
+*.backup
+*.backup_*
+
+# Python virtual environments / cache
+__pycache__/
+venv/
+.venv/
+*.pyc

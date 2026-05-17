@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Geotagged Photo Sitemap for Anderson Heating, Air & Insulation -->
+  <!-- Populated from CompanyCam API - geotagged photos only from NW Georgia service area -->
+  <!-- These images feed Google Image Search and local SEO geo signals without visible gallery pages -->
+  <!-- Run weekly pull to add new projects. Photos hosted locally for speed and control. -->
+
+  <!-- CALHOUN GA (Gordon County) - 8 photos -->
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-001.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-002.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-003.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-004.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-005.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-006.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-007.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/calhoun/calhoun-008.jpg</image:loc>
+      <image:caption>HVAC installation project in Calhoun GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Calhoun, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Calhoun, Georgia</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- DALTON GA (Whitfield County) - 7 photos -->
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-001.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-002.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-004.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-005.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-006.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-007.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://johnandersonservice.com/</loc>
+    <image:image>
+      <image:loc>https://johnandersonservice.com/images/projects/dalton/dalton-008.jpg</image:loc>
+      <image:caption>HVAC installation project in Dalton GA by Anderson Heating Air & Insulation</image:caption>
+      <image:alt>HVAC project in Dalton, Georgia - Anderson Heating, Air & Insulation</image:alt>
+      <image:geo_location>Dalton, Georgia</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- TODO: Add Rome, Cartersville, Adairsville, Chatsworth, Fairmount, Resaca, Jasper, Ellijay, etc. -->
+  <!-- Run additional batches for remaining cities to reach 10+ per 30-min city, 5+ per 60-min city -->
+</urlset>

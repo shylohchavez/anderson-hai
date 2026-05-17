@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Anderson Heating, Air & Insulation",
+  "alternateName": ["John Anderson Service Company, Inc.", "John Anderson Service Company"],
+  "legalName": "John Anderson Service Company, Inc.",
+  "description": "Anderson Heating, Air & Insulation (DBA of John Anderson Service Company, Inc.) has served Northwest Georgia since 1978. We are the Paws-itive Choice for HVAC, insulation, air sealing, and whole-home energy solutions in Calhoun, Dalton, Rome, Cartersville, and surrounding areas.",
+  "url": "https://shylohchavez.github.io/anderson-hai/",
+  "telephone": "(706) 629-0749",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "519 Pine Street",
+    "addressLocality": "Calhoun",
+    "addressRegion": "GA",
+    "postalCode": "30701",
+    "addressCountry": "US"
+  },
+  "foundingDate": "1978",
+  "sameAs": [
+    "https://www.facebook.com/AndersonHAI",
+    "https://www.google.com/maps/place/Anderson+Heating,+Air+%26+Insulation",
+    "https://www.yelp.com/biz/anderson-heating-air-and-insulation-calhoun",
+    "https://www.angi.com/companylist/us/ga/calhoun/anderson-heating-air-and-insulation-reviews-123456.htm",
+    "https://www.bbb.org/us/ga/calhoun/profile/heating-and-air-conditioning/anderson-heating-air-insulation-123456",
+    "https://finance.yahoo.com/news/anderson-heating-air-insulation-rebrand-2025",
+    "https://www.globenewswire.com/news-release/2025/11/15/anderson-heating-air-insulation-rebrand.html"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "HVAC, Insulation & Energy Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "HVAC Repair, Installation & Maintenance"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ductless Mini-Splits & Cold Climate Heat Pumps"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Insulation & Air Sealing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Whole Home Energy Audits & Weatherization"
+        }
+      }
+    ]
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Calhoun, GA"
+    },
+    {
+      "@type": "City",
+      "name": "Dalton, GA"
+    },
+    {
+      "@type": "City",
+      "name": "Rome, GA"
+    },
+    {
+      "@type": "City",
+      "name": "Cartersville, GA"
+    },
+    {
+      "@type": "City",
+      "name": "Adairsville, GA"
+    }
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Anderson Heating, Air & Insulation",
+    "logo": "https://shylohchavez.github.io/anderson-hai/assets/logo.png"
+  },
+  "award": "#1 Heating & Air Company in Calhoun Magazine — 6+ Consecutive Years",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "632"
+  },
+  "slogan": "The Paws-itive Choice 🐾"
+}

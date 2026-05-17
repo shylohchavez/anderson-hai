@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "24/7 Emergency HVAC Repair & Installation",
+  "provider": {
+    "@type": "HVACBusiness",
+    "name": "Anderson Heating, Air & Insulation",
+    "telephone": "(706) 629-0749",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "519 Pine Street",
+      "addressLocality": "Calhoun",
+      "addressRegion": "GA",
+      "postalCode": "30701"
+    }
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.5029,
+      "longitude": -84.9511
+    },
+    "geoRadius": "60 mi"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": "(706) 629-0749",
+    "availableLanguage": "English",
+    "availableService": "Emergency HVAC Repair"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Emergency HVAC Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "No Heat Emergency Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Not Cooling Emergency" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Furnace Breakdown Emergency Service" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Emergency Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency HVAC System Replacement" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Ductwork Repair" } }
+    ]
+  },
+  "description": "24/7 emergency HVAC service from Northwest Georgia's premier HVAC contractors. Same-day response for heating and air conditioning emergencies in Calhoun, Dalton, Rome, Cartersville and surrounding areas. 45 years of HVAC emergency expertise.",
+  "serviceOutput": "Restored HVAC system operation and indoor comfort"
+}

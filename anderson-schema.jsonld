@@ -1,0 +1,241 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://johnandersonservice.com/#organization",
+      "name": "John Anderson Service Company, Inc.",
+      "alternateName": "Anderson Heating, Air & Insulation",
+      "description": "Northwest Georgia's premier HVAC contractors with energy efficiency expertise. 45 years of heating and air conditioning excellence serving Calhoun, Dalton, Rome, and surrounding areas.",
+      "url": "https://johnandersonservice.com",
+      "telephone": "(706) 629-0749",
+      "email": "info@johnandersonservice.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "519 Pine Street",
+        "addressLocality": "Calhoun",
+        "addressRegion": "GA",
+        "postalCode": "30701",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.5029,
+        "longitude": -84.9513
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "foundingDate": "1978",
+      "numberOfEmployees": "10-20",
+      "slogan": "Northwest Georgia's Premier HVAC Contractors",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anderson Heating, Air & Insulation",
+        "logo": "https://johnandersonservice.com/logo.png"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "HVAC Services and Energy Solutions",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HVAC Repair, Installation & Maintenance",
+              "description": "Expert HVAC repair, installation, and maintenance for all heating and air conditioning systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heat Pump Installation & Service",
+              "description": "Specialty installation and service of heat pump systems including cold climate heat pumps."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ductless Mini-Split Systems",
+              "description": "Professional installation of MRCOOL and other ductless HVAC systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency HVAC Repair",
+              "description": "Same-day emergency HVAC repair service for heating and air conditioning systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HVAC System Optimization with Insulation",
+              "description": "Insulation and air sealing services to maximize HVAC system efficiency and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Duct Cleaning and Sealing",
+              "description": "Professional ductwork cleaning and sealing to optimize HVAC airflow."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Indoor Air Quality Solutions",
+              "description": "HVAC-integrated indoor air quality systems and filtration."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Energy-Efficient HVAC Upgrades",
+              "description": "BPI-certified energy audits and HVAC efficiency upgrades."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom HVAC Ductwork Fabrication",
+              "description": "In-house custom ductwork fabrication for optimal HVAC performance."
+            }
+          }
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Calhoun",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Dalton",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Rome",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Cartersville",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Adairsville",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Chatsworth",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Jasper",
+          "addressRegion": "GA"
+        },
+        {
+          "@type": "City",
+          "name": "Ellijay",
+          "addressRegion": "GA"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "513",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Verified Google Customer"
+        }
+      },
+      "knowsAbout": [
+        "HVAC Systems",
+        "Heat Pump Installation",
+        "Air Conditioning Repair",
+        "Furnace Installation",
+        "Ductless Mini Splits",
+        "Emergency HVAC Service",
+        "HVAC Energy Efficiency",
+        "Custom Ductwork",
+        "BPI Energy Audits"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BPI Certified Energy Auditor",
+          "credentialCategory": "Energy Efficiency Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Georgia HVAC Contractor License",
+          "credentialCategory": "State HVAC Licensing"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Building Performance Institute (BPI)"
+        },
+        {
+          "@type": "Organization",
+          "name": "ACCA (Air Conditioning Contractors of America)"
+        },
+        {
+          "@type": "Organization",
+          "name": "NATE (North American Technician Excellence)"
+        }
+      ],
+      "award": [
+        "#1 Heating & Air Company in Calhoun Magazine - 6+ Consecutive Years",
+        "Clayton County Community Action Award for Weatherization Excellence"
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-05-15",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Professional HVAC Services with Energy Efficiency Expertise"
+        }
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://johnandersonservice.com/#website",
+      "url": "https://johnandersonservice.com",
+      "name": "Anderson Heating, Air & Insulation",
+      "description": "Northwest Georgia's premier HVAC contractors with energy efficiency expertise since 1978",
+      "publisher": {
+        "@id": "https://johnandersonservice.com/#organization"
+      }
+    }
+  ]
+}
