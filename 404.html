@@ -50,11 +50,13 @@
             '/financing-options/': '/financing.html',
         };
 
-        var path = window.location.pathname.replace(/\/anderson-hai/g, '');
+        // Detect base path so this file works on both staging (/anderson-hai/) and production (/)
+        var basePath = window.location.pathname.indexOf('/anderson-hai') === 0 ? '/anderson-hai' : '';
+        var path = window.location.pathname.replace(/^\/anderson-hai/, '');
 
         // Check exact match
         if (redirects[path]) {
-            window.location.replace(window.location.origin + '/anderson-hai' + redirects[path]);
+            window.location.replace(window.location.origin + basePath + redirects[path]);
             return;
         }
 
@@ -63,7 +65,7 @@
         var pathWithSlash = pathNoSlash + '/';
         if (redirects[pathNoSlash] || redirects[pathWithSlash]) {
             var target = redirects[pathNoSlash] || redirects[pathWithSlash];
-            window.location.replace(window.location.origin + '/anderson-hai' + target);
+            window.location.replace(window.location.origin + basePath + target);
             return;
         }
 
@@ -71,7 +73,7 @@
         var cityMatch = path.match(/\/(calhoun|dalton|rome|cartersville|adairsville|chatsworth|jasper|ellijay|fairmount|resaca)/i);
         if (cityMatch) {
             var city = cityMatch[1].toLowerCase();
-            window.location.replace(window.location.origin + '/anderson-hai/' + city + '-ga.html');
+            window.location.replace(window.location.origin + basePath + '/' + city + '-ga.html');
             return;
         }
     })();
