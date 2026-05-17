@@ -20,102 +20,97 @@
     
     <!-- HVAC-First BPI Schema Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Anderson Heating, Air & Insulation",
+  "alternateName": "John Anderson Service Company, Inc.",
+  "description": "Only BPI-certified HVAC contractor in Northwest Georgia. Building Performance Institute certified energy efficiency experts with 632+ reviews.",
+  "url": "https://johnandersonservice.com/bpi-certified-hvac-contractor.html",
+  "telephone": "(706) 629-0749",
+  "email": "info@johnandersonservice.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "519 Pine Street",
+    "addressLocality": "Calhoun",
+    "addressRegion": "GA",
+    "postalCode": "30701",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "34.5029",
+    "longitude": "-84.9511"
+  },
+  "openingHours": "Mo-Fr 07:30-17:00",
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "34.5029",
+      "longitude": "-84.9511"
+    },
+    "geoRadius": "80000"
+  },
+  "hasCredential": [
     {
-        "@context": "https://schema.org",
-        "@type": "HVACBusiness",
-        "name": "Anderson Heating, Air & Insulation",
-        "alternateName": "John Anderson Service Company, Inc.",
-        "description": "Only BPI-certified HVAC contractor in Northwest Georgia. Building Performance Institute certified energy efficiency experts with 632+ reviews.",
-        "url": "https://johnandersonservice.com/bpi-certified-hvac-contractor.html",
-        "telephone": "(706) 629-0749",
-        "email": "info@johnandersonservice.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "519 Pine Street",
-            "addressLocality": "Calhoun",
-            "addressRegion": "GA", 
-            "postalCode": "30701",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "34.5029",
-            "longitude": "-84.9511"
-        },
-        "openingHours": "Mo-Fr 07:30-17:00",
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "34.5029",
-                "longitude": "-84.9511"
-            },
-            "geoRadius": "80000"
-        },
-        "hasCredential": [
-            {
-                "@type": "EducationalOccupationalCredential",
-                "name": "BPI Certified Energy Auditor",
-                "credentialCategory": "Building Performance Institute Certification",
-                "educationalCredentialAwarded": "Energy Efficiency Expert"
-            },
-            {
-                "@type": "EducationalOccupationalCredential", 
-                "name": "BPI Certified Building Analyst",
-                "credentialCategory": "Building Performance Institute Certification"
-            },
-            {
-                "@type": "EducationalOccupationalCredential", 
-                "name": "Georgia HVAC License",
-                "credentialCategory": "State HVAC Contractor License"
-            }
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "BPI-Certified HVAC Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "BPI Energy Audits for HVAC Systems",
-                        "description": "Building Performance Institute certified energy audits for HVAC optimization"
-                    }
-                },
-                {
-                    "@type": "Offer", 
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Energy-Efficient HVAC Installation",
-                        "description": "BPI-certified HVAC installations optimized for maximum energy efficiency"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service", 
-                        "name": "Whole-Home HVAC Performance Testing",
-                        "description": "BPI building performance testing to optimize HVAC system efficiency"
-                    }
-                }
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "632"
-        },
-        "slogan": "Georgia's Only BPI-Certified HVAC Contractors",
-        "foundingDate": "1978",
-        "areaServed": [
-            "Northwest Georgia",
-            "Calhoun, GA",
-            "Dalton, GA", 
-            "Rome, GA",
-            "Cartersville, GA"
-        ]
+      "@type": "EducationalOccupationalCredential",
+      "name": "BPI Certified Energy Auditor",
+      "credentialCategory": "Building Performance Institute Certification",
+      "educationalCredentialAwarded": "Energy Efficiency Expert"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "BPI Certified Building Analyst",
+      "credentialCategory": "Building Performance Institute Certification"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Georgia HVAC License",
+      "credentialCategory": "State HVAC Contractor License"
     }
-    </script>
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "BPI-Certified HVAC Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BPI Energy Audits for HVAC Systems",
+          "description": "Building Performance Institute certified energy audits for HVAC optimization"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Energy-Efficient HVAC Installation",
+          "description": "BPI-certified HVAC installations optimized for maximum energy efficiency"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Whole-Home HVAC Performance Testing",
+          "description": "BPI building performance testing to optimize HVAC system efficiency"
+        }
+      }
+    ]
+  },
+  "slogan": "Georgia's Only BPI-Certified HVAC Contractors",
+  "foundingDate": "1978",
+  "areaServed": [
+    "Northwest Georgia",
+    "Calhoun, GA",
+    "Dalton, GA",
+    "Rome, GA",
+    "Cartersville, GA"
+  ]
+}
+</script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/anderson-favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/anderson-favicon-16.png">
     <link rel="icon" type="image/png" sizes="48x48" href="images/anderson-favicon-48.png">
