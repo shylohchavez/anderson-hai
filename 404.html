@@ -10,72 +10,207 @@
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
     <script>
-    // 301 redirect map for old URL patterns → new pages
+    // Client-side redirect map for old johnandersonservice.com (WordPress) URLs.
+    // Layered fallthrough: exact match -> trade-city pattern -> trade-only -> city-only -> 404 page.
     (function() {
-        var redirects = {
-            // Old johnandersonservice.com URL patterns
-            '/hvac-services/': '/services.html',
-            '/hvac-services/calhoun/': '/calhoun-ga-hvac.html',
-            '/hvac-services/dalton/': '/dalton-ga-hvac.html',
-            '/hvac-services/rome/': '/rome-ga-hvac.html',
-            '/hvac-services/cartersville/': '/cartersville-ga-hvac.html',
-            '/hvac-services/adairsville/': '/adairsville-ga-hvac.html',
-            '/heating-and-air-conditioning-repair-services/': '/hvac-repair-install.html',
-            '/heating-and-air-conditioning-repair-services/calhoun/': '/calhoun-ga-hvac.html',
-            '/heating-and-air-conditioning-repair-services/dalton/': '/dalton-ga-hvac.html',
-            '/heating-and-air-conditioning-repair-services/rome/': '/rome-ga-hvac.html',
-            '/heating-and-air-conditioning-repair-services/cartersville/': '/cartersville-ga-hvac.html',
-            '/heating-and-air-conditioning-repair-services/lafayette/': '/lafayette-ga.html',
-            '/heating/calhoun/heating-installation/': '/calhoun-ga-hvac.html',
-            '/plumbing-services/': '/services.html',
-            '/plumbing-services/calhoun/': '/calhoun-ga.html',
-            '/plumbing-services/dalton/': '/dalton-ga.html',
-            '/plumbing-services/ellijay/': '/ellijay-ga.html',
-            '/plumbing-services/chatsworth/': '/chatsworth-ga.html',
-            '/plumbing-services/lafayette/': '/lafayette-ga.html',
-            '/insulation/': '/insulation-air-sealing.html',
-            '/insulation/calhoun/': '/hvac-and-insulation-calhoun.html',
-            '/insulation/dalton/': '/hvac-and-insulation-dalton.html',
-            '/airseal/': '/insulation-air-sealing.html',
-            '/airseal/dalton/': '/hvac-and-insulation-dalton.html',
-            '/airseal/calhoun/': '/hvac-and-insulation-calhoun.html',
-            '/energy-audit/': '/whole-home-energy-audits.html',
-            '/ac-repair-calhoun-ga/': '/calhoun-ga-hvac.html',
-            '/hvac-services-calhoun-georgia/': '/calhoun-ga-hvac.html',
-            '/24-7-emergency-hvac-calhoun-ga/': '/emergency-hvac-repair-calhoun-ga.html',
-            '/emergency/': '/emergency-hvac-repair.html',
-            '/about-us/': '/about.html',
-            '/contact-us/': '/contact.html',
-            '/testimonials/': '/reviews.html',
-            '/financing-options/': '/financing.html',
-        };
-
-        // Detect base path so this file works on both staging (/anderson-hai/) and production (/)
+        // Detect base path so this works on both staging (/anderson-hai/) and production (/)
         var basePath = window.location.pathname.indexOf('/anderson-hai') === 0 ? '/anderson-hai' : '';
         var path = window.location.pathname.replace(/^\/anderson-hai/, '');
 
-        // Check exact match
-        if (redirects[path]) {
-            window.location.replace(window.location.origin + basePath + redirects[path]);
-            return;
+        function go(target) {
+            window.location.replace(window.location.origin + basePath + target);
         }
 
-        // Check partial match (trailing slash variations)
+        // ============ LAYER 1: Exact URL redirects ============
+        var redirects = {
+            // Core pages
+            '/about-us/': '/about.html',
+            '/contact-us/': '/contact.html',
+            '/testimonials/': '/reviews.html',
+            '/reviews/': '/reviews.html',
+            '/financing-options/': '/financing.html',
+            '/financing/': '/financing.html',
+            '/coupons/': '/financing.html',
+            '/discounts/': '/financing.html',
+            '/gallery/': '/',
+            '/our-work/': '/',
+            '/service-area/': '/service-area.html',
+            '/service-areas/': '/service-area.html',
+            '/careers/': '/careers.html',
+            '/jobs/': '/careers.html',
+            '/blog/': '/blog.html',
+            '/news/': '/blog.html',
+            '/partners/': '/partners.html',
+
+            // Trade hubs (no city)
+            '/cooling/': '/hvac-repair-install.html',
+            '/air-conditioning/': '/hvac-repair-install.html',
+            '/ac/': '/hvac-repair-install.html',
+            '/ac-repair/': '/hvac-repair-install.html',
+            '/heating/': '/hvac-repair-install.html',
+            '/furnace/': '/hvac-repair-install.html',
+            '/heating-and-air-conditioning-repair-services/': '/hvac-repair-install.html',
+            '/heat-pump/': '/heat-pump-mini-split.html',
+            '/heat-pumps/': '/heat-pump-mini-split.html',
+            '/mini-split/': '/heat-pump-mini-split.html',
+            '/mini-splits/': '/heat-pump-mini-split.html',
+            '/ductless/': '/heat-pump-mini-split.html',
+            '/hvac-services/': '/services.html',
+            '/services/': '/services.html',
+
+            '/iaq/': '/indoor-air-quality.html',
+            '/indoor-air-quality/': '/indoor-air-quality.html',
+            '/air-quality/': '/indoor-air-quality.html',
+
+            '/hot-water/': '/water-heaters.html',
+            '/water-heater/': '/water-heaters.html',
+            '/water-heaters/': '/water-heaters.html',
+            '/tankless/': '/water-heaters.html',
+
+            '/windows/': '/windows-doors.html',
+            '/doors/': '/windows-doors.html',
+            '/doors-windows/': '/windows-doors.html',
+            '/windows-and-doors/': '/windows-doors.html',
+
+            '/insulation/': '/insulation-air-sealing.html',
+            '/airseal/': '/insulation-air-sealing.html',
+            '/air-seal/': '/insulation-air-sealing.html',
+            '/air-sealing/': '/insulation-air-sealing.html',
+            '/weatherization/': '/insulation-air-sealing.html',
+
+            '/duct-cleaning/': '/duct-cleaning.html',
+            '/duct-work/': '/duct-cleaning.html',
+            '/ductwork/': '/duct-cleaning.html',
+
+            '/energy-audit/': '/whole-home-energy-audits.html',
+            '/energy-audits/': '/whole-home-energy-audits.html',
+            '/home-energy-audit/': '/whole-home-energy-audits.html',
+
+            '/sheet-metal/': '/custom-sheet-metal.html',
+            '/custom-sheet-metal/': '/custom-sheet-metal.html',
+            '/sheet-metal-shop/': '/custom-sheet-metal.html',
+
+            '/crawlspace/': '/crawlspace-encapsulation.html',
+            '/crawlspace-encapsulation/': '/crawlspace-encapsulation.html',
+            '/encapsulation/': '/crawlspace-encapsulation.html',
+
+            '/maintenance/': '/maintenance-plan.html',
+            '/maintenance-plan/': '/maintenance-plan.html',
+            '/service-plan/': '/maintenance-plan.html',
+            '/membership/': '/maintenance-plan.html',
+
+            // Old marketing slugs
+            '/24-7-emergency-hvac-calhoun-ga/': '/emergency-hvac-repair-calhoun-ga.html',
+            '/ac-repair-calhoun-ga/': '/calhoun-ga-hvac.html',
+            '/hvac-services-calhoun-georgia/': '/calhoun-ga-hvac.html',
+            '/emergency/': '/emergency-hvac-repair.html',
+            '/emergency-repair/': '/emergency-hvac-repair.html',
+            '/emergency-service/': '/emergency-hvac-service.html',
+
+            // Services Anderson doesn't offer — redirect to services hub
+            '/plumbing/': '/services.html',
+            '/plumbing-services/': '/services.html',
+            '/electrical/': '/services.html',
+            '/electrical-services/': '/services.html'
+        };
+
+        // Try exact match (with and without trailing slash)
         var pathNoSlash = path.replace(/\/$/, '');
         var pathWithSlash = pathNoSlash + '/';
-        if (redirects[pathNoSlash] || redirects[pathWithSlash]) {
-            var target = redirects[pathNoSlash] || redirects[pathWithSlash];
-            window.location.replace(window.location.origin + basePath + target);
-            return;
+        if (redirects[path]) return go(redirects[path]);
+        if (redirects[pathWithSlash]) return go(redirects[pathWithSlash]);
+        if (redirects[pathNoSlash]) return go(redirects[pathNoSlash]);
+
+        // ============ LAYER 2: Trade-city pattern detection ============
+        // Handles /[trade]/[city]/ and /[trade]/[city]/[anything-deeper]/
+        var validCities = ['calhoun','dalton','rome','cartersville','adairsville','chatsworth','jasper','ellijay','fairmount','resaca','lafayette'];
+
+        // Special values:
+        //   'HVAC_CITY' -> /[city]-ga-hvac.html (the city's HVAC page)
+        //   'INS_CITY'  -> /hvac-and-insulation-[city].html (combo page)
+        //   'EMG_CITY'  -> /emergency-hvac-[city]-ga.html (emergency page)
+        //   any other string -> redirect there (city is ignored)
+        var tradeMap = {
+            'cooling': 'HVAC_CITY',
+            'air-conditioning': 'HVAC_CITY',
+            'ac': 'HVAC_CITY',
+            'ac-repair': 'HVAC_CITY',
+            'heating': 'HVAC_CITY',
+            'furnace': 'HVAC_CITY',
+            'heat-pump': 'HVAC_CITY',
+            'heat-pumps': 'HVAC_CITY',
+            'mini-split': 'HVAC_CITY',
+            'mini-splits': 'HVAC_CITY',
+            'ductless': 'HVAC_CITY',
+            'heating-and-air-conditioning-repair-services': 'HVAC_CITY',
+            'hvac': 'HVAC_CITY',
+            'hvac-services': 'HVAC_CITY',
+            'services': 'HVAC_CITY',
+
+            'iaq': '/indoor-air-quality.html',
+            'indoor-air-quality': '/indoor-air-quality.html',
+            'air-quality': '/indoor-air-quality.html',
+
+            'hot-water': '/water-heaters.html',
+            'water-heater': '/water-heaters.html',
+            'water-heaters': '/water-heaters.html',
+            'tankless': '/water-heaters.html',
+
+            'windows': '/windows-doors.html',
+            'doors': '/windows-doors.html',
+            'doors-windows': '/windows-doors.html',
+
+            'insulation': 'INS_CITY',
+            'airseal': 'INS_CITY',
+            'air-seal': 'INS_CITY',
+            'air-sealing': 'INS_CITY',
+            'weatherization': 'INS_CITY',
+
+            'duct-cleaning': '/duct-cleaning.html',
+            'ductwork': '/duct-cleaning.html',
+
+            'energy-audit': '/whole-home-energy-audits.html',
+            'energy-audits': '/whole-home-energy-audits.html',
+
+            'sheet-metal': '/custom-sheet-metal.html',
+            'crawlspace': '/crawlspace-encapsulation.html',
+            'crawlspace-encapsulation': '/crawlspace-encapsulation.html',
+
+            'maintenance': '/maintenance-plan.html',
+            'maintenance-plan': '/maintenance-plan.html',
+
+            'emergency': 'EMG_CITY',
+            'emergency-repair': 'EMG_CITY',
+            'emergency-service': 'EMG_CITY',
+            'emergency-hvac': 'EMG_CITY',
+
+            'plumbing': '/services.html',
+            'plumbing-services': '/services.html',
+            'electrical': '/services.html',
+            'electrical-services': '/services.html'
+        };
+
+        // Match /[trade]/[city]/ or /[trade]/[city]/[service]/
+        var tradeCityMatch = path.match(/^\/([^\/]+)\/([^\/]+)\/?(?:[^\/]+\/?)?$/);
+        if (tradeCityMatch) {
+            var trade = tradeCityMatch[1].toLowerCase();
+            var city = tradeCityMatch[2].toLowerCase();
+            if (tradeMap[trade] && validCities.indexOf(city) > -1) {
+                var t = tradeMap[trade];
+                if (t === 'HVAC_CITY') return go('/' + city + '-ga-hvac.html');
+                if (t === 'INS_CITY')  return go('/hvac-and-insulation-' + city + '.html');
+                if (t === 'EMG_CITY')  return go('/emergency-hvac-' + city + '-ga.html');
+                return go(t);
+            }
         }
 
-        // Check for city patterns
-        var cityMatch = path.match(/\/(calhoun|dalton|rome|cartersville|adairsville|chatsworth|jasper|ellijay|fairmount|resaca)/i);
+        // ============ LAYER 3: City-only pattern fallback ============
+        var cityMatch = path.match(/\/(calhoun|dalton|rome|cartersville|adairsville|chatsworth|jasper|ellijay|fairmount|resaca|lafayette)/i);
         if (cityMatch) {
-            var city = cityMatch[1].toLowerCase();
-            window.location.replace(window.location.origin + basePath + '/' + city + '-ga.html');
-            return;
+            return go('/' + cityMatch[1].toLowerCase() + '-ga.html');
         }
+
+        // ============ LAYER 4: Nothing matched - show the 404 page ============
     })();
     </script>
     <link rel="icon" type="image/png" href="/images/logo.png">
