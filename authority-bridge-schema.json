@@ -5,7 +5,8 @@
   "alternateName": ["John Anderson Service Company, Inc.", "John Anderson Service Company"],
   "legalName": "John Anderson Service Company, Inc.",
   "description": "Anderson Heating, Air & Insulation (DBA of John Anderson Service Company, Inc.) has served Northwest Georgia since 1978. We are the Paws-itive Choice for HVAC, insulation, air sealing, and whole-home energy solutions in Calhoun, Dalton, Rome, Cartersville, and surrounding areas.",
-  "url": "https://shylohchavez.github.io/anderson-hai/",
+  "url": "https://johnandersonservice.com/",
+  "@id": "https://johnandersonservice.com/#organization",
   "telephone": "(706) 629-0749",
   "address": {
     "@type": "PostalAddress",
@@ -84,7 +85,7 @@
   "brand": {
     "@type": "Brand",
     "name": "Anderson Heating, Air & Insulation",
-    "logo": "https://shylohchavez.github.io/anderson-hai/assets/logo.png"
+    "logo": "https://johnandersonservice.com/images/anderson-logo-full.png"
   },
   "award": "#1 Heating & Air Company in Calhoun Magazine — 6+ Consecutive Years",
   "aggregateRating": {
