@@ -1,5 +1,49 @@
-# Block staging site — remove when pointing real domain
+# Anderson Heating, Air & Insulation
+# robots.txt — production (johnandersonservice.com)
+
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /404.html
+Disallow: /reviews-section.html
+Disallow: /reviews-schema.html
+Disallow: /reviews-page.html
+Disallow: /companycam-geo-seo.html
+Disallow: /emergency-hvac-calhoun-domination.html
+Disallow: /emergency-hvac-dalton-ga-domination.html
+Disallow: /emergency-hvac-rome-ga-domination.html
+
+# Explicit welcomes for AI search crawlers (some ignore wildcard rules)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
 
 Sitemap: https://johnandersonservice.com/sitemap.xml

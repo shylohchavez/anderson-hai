@@ -4,12 +4,16 @@
     {
       "@type": "HVACBusiness",
       "@id": "https://johnandersonservice.com/#organization",
-      "name": "John Anderson Service Company, Inc.",
-      "alternateName": "Anderson Heating, Air & Insulation",
-      "description": "Northwest Georgia's premier HVAC contractors with energy efficiency expertise. 45 years of heating and air conditioning excellence serving Calhoun, Dalton, Rome, and surrounding areas.",
+      "name": "Anderson Heating, Air & Insulation",
+      "legalName": "John Anderson Service Company, Inc.",
+      "alternateName": ["Anderson HAI", "John Anderson Service Company"],
+      "description": "Northwest Georgia's premier HVAC contractor since 1978. 48 years of heating, air conditioning, and HVAC-integrated insulation, ductwork, and indoor-air-quality expertise serving Calhoun, Dalton, Rome, Cartersville and surrounding NW Georgia.",
       "url": "https://johnandersonservice.com",
-      "telephone": "(706) 629-0749",
+      "telephone": "+17066290749",
       "email": "info@johnandersonservice.com",
+      "image": "https://johnandersonservice.com/images/anderson-social-logo.jpg",
+      "logo": "https://johnandersonservice.com/images/anderson-logo-full.png",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "519 Pine Street",
@@ -21,210 +25,202 @@
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 34.5029,
-        "longitude": -84.9513
+        "longitude": -84.9511
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "foundingDate": "1978",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:30",
+          "closes": "17:00"
+        }
+      ],
+      "foundingDate": "1978-01",
+      "datePublished": "1978-01-01",
+      "dateModified": "2026-05-18",
       "numberOfEmployees": "10-20",
-      "slogan": "Northwest Georgia's Premier HVAC Contractors",
+      "slogan": "The Paws-itive Choice — Northwest Georgia's HVAC Specialists Since 1978",
       "brand": {
         "@type": "Brand",
         "name": "Anderson Heating, Air & Insulation",
-        "logo": "https://johnandersonservice.com/logo.png"
+        "logo": "https://johnandersonservice.com/images/anderson-logo-full.png"
+      },
+      "founder": {
+        "@id": "https://johnandersonservice.com/about.html#john-anderson"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "HVAC Services and Energy Solutions",
+        "name": "HVAC Services & HVAC-Integrated Home Comfort Solutions",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "HVAC Repair, Installation & Maintenance",
-              "description": "Expert HVAC repair, installation, and maintenance for all heating and air conditioning systems."
+              "description": "Expert HVAC repair, installation, and maintenance for residential and light commercial heating and air conditioning systems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Heat Pump Installation & Service",
-              "description": "Specialty installation and service of heat pump systems including cold climate heat pumps."
+              "name": "Heat Pump & Cold-Climate Heat Pump Installation",
+              "description": "HVAC specialty installation and service of standard and cold-climate heat pump systems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Ductless Mini-Split Systems",
-              "description": "Professional installation of MRCOOL and other ductless HVAC systems."
+              "name": "Ductless Mini-Split HVAC Systems",
+              "description": "Professional installation of MRCOOL, Mitsubishi and other ductless HVAC mini-split systems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Emergency HVAC Repair",
-              "description": "Same-day emergency HVAC repair service for heating and air conditioning systems."
+              "name": "24/7 Emergency HVAC Repair",
+              "description": "Same-day emergency HVAC repair for heating and air conditioning failures."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "HVAC System Optimization with Insulation",
-              "description": "Insulation and air sealing services to maximize HVAC system efficiency and performance."
+              "name": "HVAC-Integrated Insulation & Air Sealing",
+              "description": "Insulation and air sealing as HVAC system performance upgrades — sealing the envelope so HVAC equipment runs at design conditions."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Duct Cleaning and Sealing",
-              "description": "Professional ductwork cleaning and sealing to optimize HVAC airflow."
+              "name": "HVAC Duct Cleaning & Sealing",
+              "description": "Professional HVAC ductwork cleaning and sealing for optimal airflow and system efficiency."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Indoor Air Quality Solutions",
-              "description": "HVAC-integrated indoor air quality systems and filtration."
+              "name": "HVAC-Integrated Indoor Air Quality",
+              "description": "HVAC-integrated indoor air quality systems including filtration, UV, fresh-air ventilation, and dehumidification."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Energy-Efficient HVAC Upgrades",
-              "description": "BPI-certified energy audits and HVAC efficiency upgrades."
+              "name": "Whole-Home Energy Audits (HVAC-Focused)",
+              "description": "BPI-certified energy audits that identify HVAC-system efficiency opportunities and envelope/duct losses."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Custom HVAC Ductwork Fabrication",
-              "description": "In-house custom ductwork fabrication for optimal HVAC performance."
+              "name": "In-House Custom HVAC Sheet Metal Fabrication",
+              "description": "On-site custom HVAC ductwork fabrication for retrofit and new construction."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Crawlspace Encapsulation for HVAC Performance",
+              "description": "Crawlspace encapsulation to protect HVAC ductwork and improve system efficiency."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Water Heater & Tankless Installation",
+              "description": "Water heater and tankless water heater installation, integrated with whole-home HVAC and energy planning."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Energy-Efficient Windows (HVAC Load Reduction)",
+              "description": "Energy-efficient window installation as part of HVAC load reduction and whole-home comfort strategy."
             }
           }
         ]
       },
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Calhoun",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Dalton",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Rome",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Cartersville",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Adairsville",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Chatsworth",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Jasper",
-          "addressRegion": "GA"
-        },
-        {
-          "@type": "City",
-          "name": "Ellijay",
-          "addressRegion": "GA"
-        }
+        { "@type": "City", "name": "Calhoun",     "addressRegion": "GA" },
+        { "@type": "City", "name": "Dalton",      "addressRegion": "GA" },
+        { "@type": "City", "name": "Rome",        "addressRegion": "GA" },
+        { "@type": "City", "name": "Cartersville","addressRegion": "GA" },
+        { "@type": "City", "name": "Adairsville", "addressRegion": "GA" },
+        { "@type": "City", "name": "Chatsworth",  "addressRegion": "GA" },
+        { "@type": "City", "name": "Jasper",      "addressRegion": "GA" },
+        { "@type": "City", "name": "Ellijay",     "addressRegion": "GA" },
+        { "@type": "City", "name": "Fairmount",   "addressRegion": "GA" },
+        { "@type": "City", "name": "Resaca",      "addressRegion": "GA" }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "513",
+        "ratingValue": "4.8",
+        "reviewCount": "632",
         "bestRating": "5",
         "worstRating": "1"
       },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Verified Google Customer"
-        }
-      },
       "knowsAbout": [
-        "HVAC Systems",
-        "Heat Pump Installation",
-        "Air Conditioning Repair",
+        "HVAC",
+        "Heating Systems",
+        "Air Conditioning",
+        "Heat Pumps",
+        "Cold Climate Heat Pumps",
+        "Ductless Mini-Splits",
         "Furnace Installation",
-        "Ductless Mini Splits",
-        "Emergency HVAC Service",
+        "Emergency HVAC Repair",
         "HVAC Energy Efficiency",
-        "Custom Ductwork",
-        "BPI Energy Audits"
+        "Custom HVAC Ductwork",
+        "BPI Energy Audits",
+        "HVAC-Integrated Insulation",
+        "HVAC-Integrated Indoor Air Quality"
       ],
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
-          "name": "BPI Certified Energy Auditor",
-          "credentialCategory": "Energy Efficiency Certification"
+          "name": "BPI Building Analyst Certification",
+          "credentialCategory": "certification",
+          "recognizedBy": { "@type": "Organization", "name": "Building Performance Institute", "url": "https://www.bpi.org/" }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "NATE Certification",
+          "credentialCategory": "certification",
+          "recognizedBy": { "@type": "Organization", "name": "North American Technician Excellence", "url": "https://www.natex.org/" }
         },
         {
           "@type": "EducationalOccupationalCredential",
           "name": "Georgia HVAC Contractor License",
-          "credentialCategory": "State HVAC Licensing"
+          "credentialCategory": "license"
         }
       ],
       "memberOf": [
-        {
-          "@type": "Organization",
-          "name": "Building Performance Institute (BPI)"
-        },
-        {
-          "@type": "Organization",
-          "name": "ACCA (Air Conditioning Contractors of America)"
-        },
-        {
-          "@type": "Organization",
-          "name": "NATE (North American Technician Excellence)"
-        }
+        { "@type": "Organization", "name": "Building Performance Institute (BPI)", "url": "https://www.bpi.org/" },
+        { "@type": "Organization", "name": "Air Conditioning Contractors of America (ACCA)", "url": "https://acca.org/" },
+        { "@type": "Organization", "name": "North American Technician Excellence (NATE)", "url": "https://www.natex.org/" }
       ],
       "award": [
         "#1 Heating & Air Company in Calhoun Magazine - 6+ Consecutive Years",
         "Clayton County Community Action Award for Weatherization Excellence"
       ],
-      "makesOffer": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "validFrom": "2026-05-15",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Professional HVAC Services with Energy Efficiency Expertise"
-        }
+      "sameAs": [
+        "https://www.facebook.com/AndersonHeatAirCo/",
+        "https://www.instagram.com/andersonheatairco/",
+        "https://www.linkedin.com/company/anderson-heating-air-insulation",
+        "https://www.google.com/maps/place/Anderson+Heating,+Air+%26+Insulation/@34.5029,-84.9511,17z"
+      ],
+      "potentialAction": {
+        "@type": "CallAction",
+        "target": "tel:+17066290749"
       }
     },
     {
@@ -232,10 +228,11 @@
       "@id": "https://johnandersonservice.com/#website",
       "url": "https://johnandersonservice.com",
       "name": "Anderson Heating, Air & Insulation",
-      "description": "Northwest Georgia's premier HVAC contractors with energy efficiency expertise since 1978",
+      "description": "Northwest Georgia's premier HVAC contractor since 1978 — HVAC, heat pumps, mini-splits, HVAC-integrated insulation, ductwork, indoor air quality, and energy efficiency.",
       "publisher": {
         "@id": "https://johnandersonservice.com/#organization"
-      }
+      },
+      "inLanguage": "en-US"
     }
   ]
 }
