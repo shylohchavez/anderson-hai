@@ -33,6 +33,26 @@ data/internal/
 **/*private*
 **/*personal*
 
+# Internal strategy / handoff / planning docs — do NOT commit to public repo
+HANDOFF.md
+SEO-MISSION.md
+LAUNCH-CHECKLIST.md
+QA-DIFFERENTIATION-PLAN.md
+anderson-domination-battle-plan.md
+partnerships-badges.md
+logo-integration-plan.md
+companycam-setup-instructions.md
+companycam-geo-seo.py
+companycam-geo-seo.html
+GBP-*.md
+*-PASTE.md
+*-AUDIT.md
+*-audit.md
+
+# Internal tooling and intel — public site doesn't need these
+docs/
+api-data/
+
 # OpenClaw workspace (if accidentally synced)
 .openclaw/
 openclaw-workspace/
