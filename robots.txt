@@ -12,6 +12,20 @@ Disallow: /emergency-hvac-calhoun-domination.html
 Disallow: /emergency-hvac-dalton-ga-domination.html
 Disallow: /emergency-hvac-rome-ga-domination.html
 
+# Legacy meta-refresh redirect stubs (noindex, kept for inbound links)
+Disallow: /emergency-ac-repair.html
+Disallow: /emergency-hvac-repair.html
+Disallow: /emergency-hvac-repair-calhoun-ga.html
+Disallow: /emergency-hvac-repair-cartersville-ga.html
+Disallow: /emergency-hvac-repair-dalton-ga.html
+Disallow: /emergency-hvac-repair-rome-ga.html
+Disallow: /hvac-emergency-service-adairsville.html
+Disallow: /hvac-emergency-service-calhoun.html
+Disallow: /hvac-emergency-service-cartersville.html
+Disallow: /hvac-emergency-service-dalton.html
+Disallow: /hvac-emergency-service-rome.html
+Disallow: /same-day-hvac-repair-calhoun.html
+
 # Explicit welcomes for AI search crawlers (some ignore wildcard rules)
 User-agent: GPTBot
 Allow: /
