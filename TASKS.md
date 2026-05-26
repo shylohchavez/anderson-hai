@@ -123,6 +123,10 @@
 - [x] **OQ-Fab — RESOLVED 2026-05-26:** Confirmed in-house fabrication — plasma cutters AND a laser cutter for custom ductwork. Description finalized.
 - [x] **OQ-CityCard — RESOLVED 2026-05-26:** Owner deferred to recommendation → **Ductless Mini-Splits** (fills a gap; Emergency would overlap existing same-day AC messaging). Changeable later.
 - **OQ-Address:** Keep address shown (519 Pine St) or switch to hidden service-area business? (Hidden can rank better for surrounding towns if no real storefront traffic.)
+- **OQ-GitHistory:** Scrub the business-license numbers from git *history* (requires history rewrite + force-push, destructive) — or leave as-is since it's a private repo? Pending owner decision.
+- **OQ-Financing:** Do you offer customer financing? (Seeded GBP Q&A references it.) If yes, it's a strong converter to highlight on site + GBP.
+- **OQ-Analytics:** Is GA4 / call tracking installed on the site? Needed to actually measure GBP → site → call conversions (the GBP link already carries UTM tags).
+- **OQ-Commercial:** How much commercial HVAC do you want to pursue? Description says "residential and commercial," but there's no dedicated commercial content. Decides whether to build a commercial page.
 
 ---
 
@@ -134,6 +138,31 @@
 - **Dedicated plumbing/electrical pages + GBP categories** — ONLY if/when the owner decides to actively pursue that line of business (not now).
 - **Review-generation system** — share review form with past customers (Google is already prompting this).
 - **Locate 2017/2018 Reader's Choice plaque(s)** — if found, extend the award claim from "7 years running (2019–2025)" to 8–9 years.
+- **Ongoing review system** — habit of responding to ALL Google reviews (good and bad) within a few days, plus a post-job text/email asking happy customers to review. Reviews + owner responses are a top-3 local ranking + conversion factor.
+
+---
+
+## 💡 IDEAS & OPPORTUNITIES (unbiased fresh-eyes pass — NOT decided, need owner buy-in)
+*Added 2026-05-26. These are recommendations from a step-back review of the whole engagement, not locked decisions. Triage with owner before acting.*
+
+### Risk / quality flags (worth checking — could be hurting you silently)
+- **R1. Review/rating schema honesty check.** A prior commit added "review schema." VERIFY any `aggregateRating`/`review` structured data reflects REAL Google reviews — fabricated or self-serving review markup can trigger a Google penalty. Fold into the invented-claims audit. *(High priority — penalty risk.)*
+- **R2. Doorway / thin-content risk.** The site is ~220 AI-generated pages, many near-duplicate city/QA pages. Google's spam & "helpful content" systems can flag scaled, low-differentiation location pages as doorway pages. Audit for genuine per-city uniqueness/value; consolidate or enrich thin ones. *(This is the real substance behind the planned "doorway-page consolidation.")*
+- **R3. Hours vs. "emergency 7 days" contradiction.** GBP hours show Sat & Sun closed, but copy advertises "emergency service 7 days a week." Reconcile so it's not contradictory (e.g., note emergency is after-hours/weekend by phone). Honesty + avoids customer confusion.
+
+### Local SEO gaps (beyond the website itself)
+- **L1. Citation / NAP consistency across third-party directories** — not just the website. Make name/address/phone identical on Yelp, BBB, Angi, Facebook, Apple Maps, Bing Places, etc. Inconsistent citations are a known local-ranking drag (and likely messy after the old agency).
+- **L2. Claim/clean Bing Places & Apple Maps** — don't optimize only Google; these feed other assistants/maps and the LLMs you're already ranking in.
+- **L3. Right-size the GBP service area** — 17 towns is broad and includes far/tiny ones (e.g., Trion, Summerville ~30–40 min). Consider trimming to genuine coverage so the geographic signal isn't diluted.
+
+### Content opportunities (leverage real, verified strengths)
+- **C1. In-house custom ductwork fabrication page** + photos of the shop, plasma cutters, and laser cutter. This is a genuine differentiator most competitors can't claim — currently under-leveraged. Great for both conversions and LLM citations.
+- **C2. Rebates & tax-credit content refresh** — there's already a Georgia Power rebates blog; update it for current (2026) federal 25C HVAC/insulation credits + utility rebates. Pairs perfectly with the BPI/Energy-Auditor credibility and drives high-intent leads.
+- **C3. Lean on the BPI/Energy-Auditor + Weatherization-Award story** — most HVAC shops have zero BPI certs; build a short "why our energy expertise saves you money" angle tying certs → audits → insulation → lower bills.
+
+### Brand / consistency
+- **B1. Lock the "since 1978 / years in business" number** so it's consistent everywhere and won't silently go stale (site currently says "48 years").
+- **B2. Add `sameAs` social links + accurate `LocalBusiness`/`HVACBusiness` schema** (NAP, geo, hours, social profiles) once the canonical name is finalized — strengthens both Google and LLM understanding.
 
 ---
 
@@ -152,6 +181,7 @@
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — Fresh-eyes pass: added "💡 IDEAS & OPPORTUNITIES" section (risk/quality flags R1–R3, local-SEO gaps L1–L3, content opportunities C1–C3, brand/consistency B1–B2) and new open questions (git-history scrub, financing, analytics, commercial scope) + ongoing review-system future task. All flagged as undecided/needs owner buy-in.
 - 2026-05-26 — Claude — Privacy scrub: removed business-license/account numbers per owner; added Rule 9 (never log sensitive docs/numbers); noted 2026 license in hand (private); confirmed in-house plumbing/electrical licensing surfaced as credential only (D5); added note that emergency-service messaging is preserved despite the mini-splits card choice.
 - 2026-05-26 — Claude — Resolved OQ-Fab (in-house plasma + laser cutter fabrication; GBP description now FINAL) and OQ-CityCard (Ductless Mini-Splits, owner deferred to recommendation).
 - 2026-05-26 — Claude — Full conversation sweep: resolved OQ-Account (one profile, no duplicate) + lifted D6 freeze; added business-license note (later scrubbed for privacy) + warning that 706-629-0151 is the City's number; added social profile handles + GBP UTM link; added warning not to blanket-remove "plumbing"/"electrical" (most mentions are legit); added Tooling/Continuity notes section; logged completed items.
