@@ -20,6 +20,7 @@
 6. **Every edit appends a Changelog entry** at the bottom: date — who made the change (Claude / other LLM / person's name) — one-line summary.
 7. **When unsure, ask the owner — don't guess.** Especially for any claim that could be public-facing (awards, certifications, services offered).
 8. **GBP safety:** the Google Business Profile is recovering from a prior suspension. Do NOT advise or make GBP changes that aren't accuracy-improving. No category stuffing, ever.
+9. **🔒 NEVER log sensitive documents or numbers.** Do not record business-license numbers, account numbers, or other private identifiers in this file or anywhere, and never share the license document or similar paperwork. (Owner instruction 2026-05-26.)
 
 ---
 
@@ -59,8 +60,8 @@
 - **Capability (CONFIRMED 2026-05-26):** In-house sheet-metal shop with **plasma cutters AND a laser cutter** for custom ductwork fabrication. Differentiator — most HVAC companies sub this out.
 - **Services actually offered:** Residential & commercial HVAC, AC repair/install, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality, attic insulation, air sealing, crawlspace encapsulation, energy audits, water heaters (light), light HVAC-related electrical/plumbing.
 - **Contact:** Phone (primary) **706-629-0749**; secondary 706-764-4398; SMS/chat +1 706-608-8723. Website: johnandersonservice.com.
-  - ⚠️ **Do NOT use 706-629-0151** — that number on the business license is the **City of Calhoun's** office number, not the business.
-- **Business license:** City of Calhoun, **License #1082**, Account #10926, Type **23PH "Plumbing Heating A/C Contractors."** The photographed copy was the **2025** license, **expired 12/31/2025** → see task to confirm 2026 renewal.
+  - ⚠️ **Do NOT use 706-629-0151** — that is the **City of Calhoun's** office number, not the business.
+- **Licensing:** Current **2026** City of Calhoun business license is in hand (owner-confirmed). Business also holds **in-house plumbing and electrical licenses** (under-utilized — surfaced as a credential, not advertised services; see D5). 🔒 **DO NOT log license/account numbers, and DO NOT share the license document with anyone** (owner instruction 2026-05-26).
 - **Social profiles (on GBP):** Facebook /andersonheatairco · Instagram @andersonheatairco · YouTube @andersonheatairco · LinkedIn /company/anderson-heating-air-insulation · TikTok @andersonheatairco.
 - **GBP website link uses UTM tracking:** `johnandersonservice.com/?utm_source=Google&utm_medium=Organic&utm_campaign=GBP` — keep (good for attributing GBP traffic).
 - **Evidence files saved for name appeal / claim backup:** building sign photo, truck wrap photo (both show "Anderson Heating Air Insulation" lockup), City of Calhoun business license, the four plaques above. NOTE: 2025 plaque reads "Anderson Heating Air and Insulation" — supports keeping the full GBP name.
@@ -106,6 +107,7 @@
 - [ ] **Fix the false "Electrical & Plumbing" block on all 8 city pages** (adairsville, chatsworth, dalton, ellijay, fairmount, jasper, resaca, rome /index.html). It currently advertises "Full home services including electrical repairs and plumbing" — false-positioning as general electrician/plumber. Origin: AI-generated filler in the first commit (d3d6d0f, 2026-05-17), not owner-entered.
   - Replace bullet `Full service: HVAC + Insulation + Electrical + Plumbing` → `Full-service HVAC: repair, installation, maintenance & insulation`.
   - Replace 6th service card "Electrical & Plumbing" → **Ductless Mini-Splits** card (decided — see OQ-CityCard).
+  - ✅ **Emergency service messaging is PRESERVED** — it lives in a separate "Emergency service available 7 days a week" bullet on the city pages, in the GBP description, and in dedicated emergency pages (e.g. emergency-hvac-*-ga.html). The mini-splits card does NOT remove any emergency content. (Owner explicitly wants honest emergency-service messaging kept.)
 - [ ] **`/plumbing/` redirect in 404.html** → point to `water-heaters.html` instead of generic `services.html` (so the rare plumbing searcher lands on something we do).
 - [ ] **NAP / brand-name consistency:** standardize canonical public name to `Anderson Heating, Air & Insulation` across all files + schema (signage uses no comma/ampersand; website schema uses comma+ampersand — pick the punctuated version, align everything).
 - [ ] **Audit for other AI-invented/inaccurate claims** across the site (services not offered, fake stats, unverified credentials) — bring a list to owner before changing.
@@ -132,7 +134,6 @@
 - **Dedicated plumbing/electrical pages + GBP categories** — ONLY if/when the owner decides to actively pursue that line of business (not now).
 - **Review-generation system** — share review form with past customers (Google is already prompting this).
 - **Locate 2017/2018 Reader's Choice plaque(s)** — if found, extend the award claim from "7 years running (2019–2025)" to 8–9 years.
-- **Confirm 2026 business license renewal** — the license we have a photo of was the 2025 one (expired 12/31/2025). Verify the City of Calhoun 2026 license is active before relying on it as evidence.
 
 ---
 
@@ -146,10 +147,12 @@
 - 2026-05-26 — OQ-Awards resolved (7 years running, 2019–2025).
 - 2026-05-26 — OQ-Fab resolved (in-house fab: plasma + laser cutter). GBP description now FINAL.
 - 2026-05-26 — OQ-CityCard resolved (Ductless Mini-Splits).
+- 2026-05-26 — 2026 City of Calhoun business license confirmed in hand (details held privately, not logged).
 
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — Privacy scrub: removed business-license/account numbers per owner; added Rule 9 (never log sensitive docs/numbers); noted 2026 license in hand (private); confirmed in-house plumbing/electrical licensing surfaced as credential only (D5); added note that emergency-service messaging is preserved despite the mini-splits card choice.
 - 2026-05-26 — Claude — Resolved OQ-Fab (in-house plasma + laser cutter fabrication; GBP description now FINAL) and OQ-CityCard (Ductless Mini-Splits, owner deferred to recommendation).
 - 2026-05-26 — Claude — Full conversation sweep: resolved OQ-Account (one profile, no duplicate) + lifted D6 freeze; added business license details (#1082, 2025 expired→confirm 2026 renewal) + warning that 706-629-0151 is the City's number; added social profile handles + GBP UTM link; added warning not to blanket-remove "plumbing"/"electrical" (most mentions are legit); added Tooling/Continuity notes section; logged completed items.
 - 2026-05-26 — Claude — Resolved OQ-Awards: owner confirmed 7 consecutive Reader's Choice wins (2019–2025); locked description wording to "7 years running (2019–2025)"; noted possible 2017/2018 extension; added future task to locate that plaque.
