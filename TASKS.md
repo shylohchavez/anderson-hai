@@ -45,7 +45,8 @@
 - **D4. Water heaters:** keep `water-heaters.html` live so it's findable IF someone lands on it, but do NOT feature/promote it. NOT listed on GBP.
 - **D5. Electrical/plumbing on website:** reframe away from "full home services / general electrician+plumber." Only mention HVAC-related electrical (disconnects, thermostat wiring, hookups). Use licensing as a *credential* ("licensed in HVAC, electrical & plumbing"), not as advertised services.
 - **D6. GBP changes — freeze LIFTING.** Account situation resolved 2026-05-26: it's ONE profile, just access management — NO duplicate listing. Duplicate risk is gone. Remaining caution: a second managing account is in a "wait 5 days, Google is verifying" access window — don't re-verify/re-request during it, but accuracy-improving edits from the already-verified owner account are OK once owner is comfortable. Proceed with the GBP task list when ready.
-- **D7. Every public-facing claim must trace to real evidence** (a plaque, a license, a cert). No agency/bot filler claims.
+- **D7. Every public-facing claim must trace to real evidence** (a plaque, a license, a cert). No agency/bot filler claims. **Owner confirms (2026-05-26): nothing on the site is fabricated** — claims are real and, if anything, under-stated.
+- **D8. Do NOT change GBP business hours** (owner decision 2026-05-26). Keep Mon–Fri 7:30–5, Sat/Sun closed. Emergency availability is handled by phone/after-hours — NOT by editing posted hours.
 
 ---
 
@@ -90,7 +91,17 @@
 - [ ] **Services:** add HVAC-only services w/ short blurbs (AC repair, AC install, heating/furnace repair, heat pumps, ductless mini-splits, ductwork & sealing, indoor air quality, attic insulation & air sealing, maintenance plans). No water heaters/electrical/plumbing.
 - [ ] **Attributes:** fill empties truthfully — Family-owned, Veteran/Senior discount, Emergency service, Online estimates, Onsite services, Free estimates, parking.
 - [ ] **Short name:** change to a clean vanity URL (e.g. `AndersonHeatingAir`).
-- [ ] **Photos:** upload 10+ — logo, truck wrap, building sign, team, before/afters, equipment, the plaques.
+- [ ] **Photos:** upload 10+ — logo, truck wrap, building sign, team, before/afters, equipment, the plaques. **Owner gathering more (incl. plasma/laser cutter shots).** See "Photos to gather" list below.
+
+#### Photos to gather (owner) — prioritized
+1. **Plasma cutter + laser cutter** (zoomed in on the machine/work is fine to avoid shop clutter) — these power the C1 fabrication differentiator.
+2. **Custom ductwork being fabricated** (close-ups of finished pieces).
+3. **Trucks / vans** (the wrap) and the **building sign**.
+4. **Team / techs on a job** (faces build trust; even a couple).
+5. **Before/after installs** (new condenser, furnace, mini-split, attic insulation).
+6. **The award plaques & BPI cert** (already photographed — reuse).
+7. **Logo** (clean, high-res).
+*Tip: GBP favors authentic over-polished photos, but tight/zoomed shots are totally fine to keep clutter out of frame.*
 - [ ] **Q&A:** seed 3–5 owner-posted Q&As (emergency service? areas served? financing?).
 - [ ] **Posts:** publish starter posts; then ~monthly.
 - [ ] **Respond to the 4 pending reviews.**
@@ -146,9 +157,9 @@
 *Added 2026-05-26. These are recommendations from a step-back review of the whole engagement, not locked decisions. Triage with owner before acting.*
 
 ### Risk / quality flags (worth checking — could be hurting you silently)
-- **R1. Review/rating schema honesty check.** A prior commit added "review schema." VERIFY any `aggregateRating`/`review` structured data reflects REAL Google reviews — fabricated or self-serving review markup can trigger a Google penalty. Fold into the invented-claims audit. *(High priority — penalty risk.)*
+- **R1. Review/rating schema = verify it's wired to real data (NOT a fabrication concern).** Owner confirms nothing is fabricated. This is purely technical: make sure any `aggregateRating`/`review` structured data reflects REAL review numbers (not hand-typed/stale values hardcoded by the old agency), and ideally updates from live data. Owner wants this verified/ready. *(Static sites usually carry a static snapshot — if so, it must match reality and be kept current, or use a live reviews widget.)*
 - **R2. Doorway / thin-content risk.** The site is ~220 AI-generated pages, many near-duplicate city/QA pages. Google's spam & "helpful content" systems can flag scaled, low-differentiation location pages as doorway pages. Audit for genuine per-city uniqueness/value; consolidate or enrich thin ones. *(This is the real substance behind the planned "doorway-page consolidation.")*
-- **R3. Hours vs. "emergency 7 days" contradiction.** GBP hours show Sat & Sun closed, but copy advertises "emergency service 7 days a week." Reconcile so it's not contradictory (e.g., note emergency is after-hours/weekend by phone). Honesty + avoids customer confusion.
+- **R3. RESOLVED via D8 — do NOT change hours.** Owner keeps posted GBP hours as-is. Instead, frame emergency-service copy as "after-hours & weekend emergency service by phone" so it reads honestly alongside the Mon–Fri posted hours (no contradiction, no hours change).
 
 ### Local SEO gaps (beyond the website itself)
 - **L1. Citation / NAP consistency across third-party directories** — not just the website. Make name/address/phone identical on Yelp, BBB, Angi, Facebook, Apple Maps, Bing Places, etc. Inconsistent citations are a known local-ranking drag (and likely messy after the old agency).
@@ -181,6 +192,7 @@
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — Owner decisions: D8 added (do NOT change GBP hours; emergency handled by phone/after-hours); R3 resolved accordingly; D7 updated (owner confirms nothing fabricated); R1 reframed from fabrication-doubt to a technical "is the review schema wired to real/live data" check (owner wants it verified/ready); added prioritized "Photos to gather" list (owner getting plasma/laser cutter shots).
 - 2026-05-26 — Claude — Fresh-eyes pass: added "💡 IDEAS & OPPORTUNITIES" section (risk/quality flags R1–R3, local-SEO gaps L1–L3, content opportunities C1–C3, brand/consistency B1–B2) and new open questions (git-history scrub, financing, analytics, commercial scope) + ongoing review-system future task. All flagged as undecided/needs owner buy-in.
 - 2026-05-26 — Claude — Privacy scrub: removed business-license/account numbers per owner; added Rule 9 (never log sensitive docs/numbers); noted 2026 license in hand (private); confirmed in-house plumbing/electrical licensing surfaced as credential only (D5); added note that emergency-service messaging is preserved despite the mini-splits card choice.
 - 2026-05-26 — Claude — Resolved OQ-Fab (in-house plasma + laser cutter fabrication; GBP description now FINAL) and OQ-CityCard (Ductless Mini-Splits, owner deferred to recommendation).
