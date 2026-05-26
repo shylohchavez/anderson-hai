@@ -53,7 +53,7 @@
 - **Awards (plaques photographed, on the wall):**
   - Calhoun Magazine **Reader's Choice** — Winner, "Best Heating & Air in Northwest Georgia" — **2019** (to John Anderson Service Company).
   - Calhoun Magazine **Reader's Choice** — Winner, "Best Heating and Air in Northwest Georgia" — **2025** (to Anderson Heating Air and Insulation).
-  - Owner states they have won most/every year; documented plaques include 2019, 2021, 2023, 2025. Cannot currently prove a specific consecutive-year count. (Calhoun Magazine publishes winners yearly = publicly verifiable.)
+  - **Owner confirms: won EVERY year 2019 through 2025 = 7 consecutive years (7-time winner).** Plaques physically on hand: 2019, 2021, 2023, 2025; in-between years (2020, 2022, 2024) owner-confirmed won. Possibly also **2017 and/or 2018** (owner believes so; plaque not located yet — see Future Plans to confirm/extend). All publicly verifiable via Calhoun Magazine's published yearly winners.
   - **2025 National Weatherization Day** — "Outstanding Subcontractor Partnership Award" / Certificate of Appreciation, from Clayton County Community Services Authority, Inc. (to Anderson Heating-Air-Insulation).
 - **Certifications:** BPI-certified team with **multiple** BPI certifications (more than the one plaque on the wall). Documented example: John Anderson — BPI Home Energy Professional, **Certified Energy Auditor**, BPI ID# 5073218, valid 4/24/2025–4/24/2028. Also references Building Analyst.
 - **Capability:** In-house custom ductwork fabrication (sheet-metal shop / laser/plasma cutter). [NEEDS FINAL OWNER CONFIRM — see OQ-Fab]
@@ -92,7 +92,7 @@
 - [ ] **Opening date:** confirmed 1978 — keep (drives "years in business" badge).
 
 ### DRAFT description (final pending OQ-Awards + OQ-Fab; ~740 chars, under 750 limit)
-> Anderson Heating, Air & Insulation has kept Northwest Georgia comfortable since 1978. A locally owned, family-run HVAC contractor in Calhoun, we handle residential and commercial AC repair and installation, furnaces, heat pumps, ductless mini-splits, and ductwork — plus attic insulation, air sealing, and crawlspace encapsulation to help your system work less and last longer. We fabricate custom ductwork in-house, and our BPI-certified team holds multiple certifications including Building Analyst and Certified Energy Auditor. Voted Best Heating & Air in Northwest Georgia in Calhoun Magazine's Reader's Choice Awards [AWARDS WORDING TBD], and honored with a 2025 National Weatherization Day Outstanding Subcontractor Partnership Award. Call 706-629-0749.
+> Anderson Heating, Air & Insulation has kept Northwest Georgia comfortable since 1978. A locally owned, family-run HVAC contractor in Calhoun, we handle residential and commercial AC repair and installation, furnaces, heat pumps, ductless mini-splits, and ductwork — plus attic insulation, air sealing, and crawlspace encapsulation to help your system work less and last longer. We fabricate custom ductwork in-house, and our BPI-certified team holds multiple certifications including Building Analyst and Certified Energy Auditor. Voted Best Heating & Air in Northwest Georgia in Calhoun Magazine's Reader's Choice Awards 7 years running (2019–2025), and honored with a 2025 National Weatherization Day Outstanding Subcontractor Partnership Award. Call 706-629-0749.
 
 ---
 
@@ -115,7 +115,7 @@
   - [ ] Check GBP → Business Profile settings → **People and access**: list every account + role (Primary Owner / Owner / Manager).
   - [ ] Check Google Maps for "Anderson Heating Air Insulation Calhoun": **one pin or two?** (one = just access mgmt; two = duplicate listing to merge later).
   - [ ] Let the 5-day verification finish — do NOT edit, re-verify, or re-request access during it.
-- **OQ-Awards:** Pick award wording — "7-time Reader's Choice winner" (only if archive proves ≥7) vs. bulletproof "Multiple-year Reader's Choice winner, including 2025."
+- [x] **OQ-Awards — RESOLVED 2026-05-26:** Owner confirmed 7 consecutive years (2019–2025). Wording locked to "7 years running (2019–2025)." Possibly extendable to 2017/2018 if that plaque is found.
 - **OQ-Fab:** Confirm in-house custom ductwork fabrication (sheet-metal shop / laser-plasma cutter) — yes/no and exact description.
 - **OQ-CityCard:** 6th city-page card replacement — Ductless Mini-Splits OR Emergency HVAC Service?
 - **OQ-Address:** Keep address shown (519 Pine St) or switch to hidden service-area business? (Hidden can rank better for surrounding towns if no real storefront traffic.)
@@ -129,6 +129,7 @@
 - **Duplicate GBP listing merge** — if Maps shows two pins (see OQ-Account).
 - **Dedicated plumbing/electrical pages + GBP categories** — ONLY if/when the owner decides to actively pursue that line of business (not now).
 - **Review-generation system** — share review form with past customers (Google is already prompting this).
+- **Locate 2017/2018 Reader's Choice plaque(s)** — if found, extend the award claim from "7 years running (2019–2025)" to 8–9 years.
 
 ---
 
@@ -138,4 +139,5 @@
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — Resolved OQ-Awards: owner confirmed 7 consecutive Reader's Choice wins (2019–2025); locked description wording to "7 years running (2019–2025)"; noted possible 2017/2018 extension; added future task to locate that plaque.
 - 2026-05-26 — Claude — Created this file. Captured full context, locked decisions (D1–D7), verified facts/evidence (awards, BPI, capabilities), GBP current state + task list + draft description, website task list, open questions (account/verification, awards wording, fabrication, city card, address), and future plans.
