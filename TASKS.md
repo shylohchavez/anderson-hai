@@ -94,6 +94,24 @@ Owner chose to power through all GBP edits in a single session (worst-case risk 
 8. Seed 3–5 Q&As (owner posts the question and answers from the business).
 9. Publish 1–2 starter Posts.
 
+### Review reply templates (paste; customize name + tweak per review)
+- **5-star:** "Thank you, [First Name] — really appreciate you taking the time! Glad we could get your [AC/system/install] taken care of. Don't hesitate to call us at 706-629-0749 if you need anything else. — The Anderson Heating, Air & Insulation team"
+- **3–4 star (neutral):** "Thanks for the honest feedback, [First Name]. We want to make sure we got it 100% right — please give us a call at 706-629-0749 and ask for John so we can address anything we may have missed."
+- **1–2 star (critical):** "[First Name], thank you for sharing this. We take every concern seriously and want to make this right. Please call us at 706-629-0749 so we can look into what happened and find a solution."
+- Rules: use first name; vary wording slightly; do NOT argue on critical reviews — move to phone; mention HVAC/service naturally where fitting.
+
+### Owner picks (D9 session)
+- **Short name:** default to `AndersonHeatingAir` (18 chars, on-brand). Fallbacks if taken: `AndersonHeatAirGA`, `AndersonHVACCalhoun`, `AndersonHVACGA`.
+- **"Air filter supplier" category:** DROP unless you actively wholesale/retail filters (replacing as part of service ≠ supplier).
+- Consider adding if missing: **AC contractor**, **Heating contractor**, **Furnace repair service**.
+
+### Summer-urgency starter Post (publish today)
+> **AC trouble? We're on it.** Same-day air conditioning repair across Calhoun, Dalton, Rome, Cartersville and all of Northwest Georgia. Voted Best Heating & Air 7 years running. Call **706-629-0749** — emergency service available after hours by phone.
+> CTA button: "Call now" → 706-629-0749
+
+### Highest-leverage call-driver this week — fresh reviews
+Beyond all GBP edits, the fastest way to move the local pack THIS WEEK is fresh Google reviews. Use the dashboard's "Get more reviews" share-link to text the last 10–20 happy customers tonight. Suggested text: *"Hey [name], hope the system is treating you right — would mean the world if you'd leave us a quick Google review: [link]. Thanks — John."*
+
 **Phased fallback (only if any edit triggers Pending review):**
 - Phase 1: reviews + photos. Phase 2 (after settle): description + services + attributes. Phase 3 (after settle): categories + short name + Q&A/posts.
 
