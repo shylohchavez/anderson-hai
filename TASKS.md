@@ -47,6 +47,7 @@
 - **D6. GBP changes — freeze LIFTING.** Account situation resolved 2026-05-26: it's ONE profile, just access management — NO duplicate listing. Duplicate risk is gone. Remaining caution: a second managing account is in a "wait 5 days, Google is verifying" access window — don't re-verify/re-request during it, but accuracy-improving edits from the already-verified owner account are OK once owner is comfortable. Proceed with the GBP task list when ready.
 - **D7. Every public-facing claim must trace to real evidence** (a plaque, a license, a cert). No agency/bot filler claims. **Owner confirms (2026-05-26): nothing on the site is fabricated** — claims are real and, if anything, under-stated.
 - **D8. Do NOT change GBP business hours** (owner decision 2026-05-26). Keep Mon–Fri 7:30–5, Sat/Sun closed. Emergency availability is handled by phone/after-hours — NOT by editing posted hours.
+- **D9. Do all GBP edits in one session** (owner decision 2026-05-26) — the staggered phased plan is reserved as fallback only if a specific edit triggers Pending review. Hard guardrails: primary owner account only; do NOT touch the name; evidence ready; double-check each Save/Confirm.
 
 ---
 
@@ -73,20 +74,28 @@
 ## 📋 GOOGLE BUSINESS PROFILE (GBP) — TASKS
 *(All BLOCKED by D6 freeze until OQ-Account is resolved. Prep now, apply after.)*
 
-### Recommended rollout sequence (added 2026-05-26 after the auto-name-restoration event)
-Don't pile every GBP edit into one session — stagger over ~1–2 weeks so Google sees steady, accuracy-improving updates rather than a chaotic burst right after the name event. Edit only from the verified primary owner account; let the second account's 5-day verification finish on its own.
+### Rollout sequence — OWNER DECISION 2026-05-26: do it all in one session
+Owner chose to power through all GBP edits in a single session (worst-case risk is acceptable given everything is accuracy-improving and the algorithm just auto-corrected the name). The phased plan below is kept as a fallback in case any edit triggers a "Pending Google review."
 
-- **Phase 1 (today/tomorrow, lowest-risk highest-reward):**
-  1. Respond to the 4 pending reviews.
-  2. Upload photos you already have (truck, building sign, plaques, BPI cert, logo).
-- **Phase 2 (a few days later):**
-  3. Paste the final description.
-  4. Add the HVAC services with blurbs.
-  5. Fill empty attributes truthfully.
-- **Phase 3 (after Phase 2 settles, ~a week+):**
-  6. Trim/refine categories (decide on "Air filter supplier").
-  7. Fix the short name (vanity URL).
-  8. Seed 3–5 Q&As, post 1–2 starter Posts.
+**Hard guardrails for the session:**
+- Edit ONLY from the verified primary owner account (the second account is still finishing its 5-day verification — do not have it editing in parallel, and do not re-request access).
+- **DO NOT touch the name field** — it is auto-restored to "Anderson Heating, Air & Insulation" and locked in our favor.
+- Have evidence ready in case any single edit triggers a verification prompt: Google's auto-restoration email, signage photos, plaques, license confirmation.
+- Move quickly but verify the Save/Confirm screen before each commit (the biggest real risk is a manual mistake like accidentally marking "permanently closed").
+
+**Recommended order (in one session):**
+1. Respond to the 4 pending reviews.
+2. Upload photos (truck, building sign, plaques, BPI cert, logo — more later when plasma/laser shots are taken).
+3. Paste the final description.
+4. Add HVAC services with blurbs.
+5. Fill empty attributes truthfully (family-owned, online estimates, etc.).
+6. Refine categories (decide on "Air filter supplier" — keep ONLY if you actually supply filters).
+7. Fix the short name (vanity URL → clean version like `AndersonHeatingAir`).
+8. Seed 3–5 Q&As (owner posts the question and answers from the business).
+9. Publish 1–2 starter Posts.
+
+**Phased fallback (only if any edit triggers Pending review):**
+- Phase 1: reviews + photos. Phase 2 (after settle): description + services + attributes. Phase 3 (after settle): categories + short name + Q&A/posts.
 
 ### Current GBP state (observed 2026-05-26)
 - Name: Anderson Heating, Air & Insulation ✅
@@ -209,6 +218,7 @@ Don't pile every GBP edit into one session — stagger over ~1–2 weeks so Goog
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — D9 added: owner chose to do all GBP edits in one session; updated rollout to a single-session order with hard guardrails (primary account only, don't touch the name, evidence ready, verify each Save). Phased plan retained as fallback only.
 - 2026-05-26 — Claude — Added recommended 3-phase GBP rollout sequence (reviews+photos → description+services+attributes → categories+short-name+Q&A/posts), spread over ~1–2 weeks to avoid burst-edit re-review after the name event.
 - 2026-05-26 — Claude — 🎉 GBP name auto-restored by Google to full "Anderson Heating, Air & Insulation" (per official email). D1 resolved; future "name appeal" task closed; saved restoration-email note to evidence list; reminder: do NOT touch the name field now.
 - 2026-05-26 — Claude — Owner decisions: D8 added (do NOT change GBP hours; emergency handled by phone/after-hours); R3 resolved accordingly; D7 updated (owner confirms nothing fabricated); R1 reframed from fabrication-doubt to a technical "is the review schema wired to real/live data" check (owner wants it verified/ready); added prioritized "Photos to gather" list (owner getting plasma/laser cutter shots).
