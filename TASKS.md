@@ -39,7 +39,7 @@
 
 ## 🔒 DECISIONS (LOCKED — do not reverse without owner approval)
 
-- **D1. GBP name:** Leave the name field as-is (currently shows full "Anderson Heating, Air & Insulation"). Do NOT change it now. Position for a possible owner-approved edit LATER, backed by signage/plaque evidence.
+- **D1. GBP name — RESOLVED 2026-05-26.** Google's automated systems restored the full name from "Anderson" back to **"Anderson Heating, Air & Insulation."** Confirmed via official Google Business Profile email ("Your Business Profile has been updated"). No appeal needed. **DO NOT edit the name field** — leave it exactly as Google set it, and SAVE the confirmation email as evidence in case it ever flips again.
 - **D2. HVAC-first everywhere** — GBP, website, schema, all copy.
 - **D3. No plumbing / electrical / builder / general-contractor categories on GBP.** HVAC-focused categories only.
 - **D4. Water heaters:** keep `water-heaters.html` live so it's findable IF someone lands on it, but do NOT feature/promote it. NOT listed on GBP.
@@ -65,7 +65,8 @@
 - **Licensing:** Current **2026** City of Calhoun business license is in hand (owner-confirmed). Business also holds **in-house plumbing and electrical licenses** (under-utilized — surfaced as a credential, not advertised services; see D5). 🔒 **DO NOT log license/account numbers, and DO NOT share the license document with anyone** (owner instruction 2026-05-26).
 - **Social profiles (on GBP):** Facebook /andersonheatairco · Instagram @andersonheatairco · YouTube @andersonheatairco · LinkedIn /company/anderson-heating-air-insulation · TikTok @andersonheatairco.
 - **GBP website link uses UTM tracking:** `johnandersonservice.com/?utm_source=Google&utm_medium=Organic&utm_campaign=GBP` — keep (good for attributing GBP traffic).
-- **Evidence files saved for name appeal / claim backup:** building sign photo, truck wrap photo (both show "Anderson Heating Air Insulation" lockup), City of Calhoun business license, the four plaques above. NOTE: 2025 plaque reads "Anderson Heating Air and Insulation" — supports keeping the full GBP name.
+- **Evidence files saved for claim backup / name-restoration record:** building sign photo, truck wrap photo (both show "Anderson Heating Air Insulation" lockup), City of Calhoun business license (held privately — see Rule 9), the four plaques above. NOTE: 2025 plaque reads "Anderson Heating Air and Insulation" — supports the full GBP name.
+- **GBP name auto-restoration record (2026-05-26):** Official Google Business Profile email confirming "New business name: Anderson Heating, Air & Insulation" / "Previous business name: Anderson" (struck through). **Owner: save this email** — it's the cleanest defense if Google ever flips it back.
 
 ---
 
@@ -143,7 +144,7 @@
 
 ## 🔭 FUTURE PLANS (not yet scheduled)
 
-- **GBP name appeal:** in a few weeks, once the profile is stable/aged with reviews, submit ONE owner-approved name edit with evidence (signage + truck + license + 2025 plaque) to keep the full "Anderson Heating, Air & Insulation."
+- ~~**GBP name appeal**~~ — RESOLVED 2026-05-26: Google's automated system auto-restored the full name. No appeal needed. (Keep the signage/plaque evidence file in case it's ever needed defensively.)
 - **Vercel migration:** move the static site to Vercel; implement clean redirects; consolidate doorway/duplicate pages.
 - **Duplicate GBP listing merge** — if Maps shows two pins (see OQ-Account).
 - **Dedicated plumbing/electrical pages + GBP categories** — ONLY if/when the owner decides to actively pursue that line of business (not now).
@@ -188,10 +189,12 @@
 - 2026-05-26 — OQ-Fab resolved (in-house fab: plasma + laser cutter). GBP description now FINAL.
 - 2026-05-26 — OQ-CityCard resolved (Ductless Mini-Splits).
 - 2026-05-26 — 2026 City of Calhoun business license confirmed in hand (details held privately, not logged).
+- 2026-05-26 — 🎉 **GBP name auto-restored to "Anderson Heating, Air & Insulation"** by Google's automated systems (per official confirmation email). D1 resolved; no appeal needed.
 
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — 🎉 GBP name auto-restored by Google to full "Anderson Heating, Air & Insulation" (per official email). D1 resolved; future "name appeal" task closed; saved restoration-email note to evidence list; reminder: do NOT touch the name field now.
 - 2026-05-26 — Claude — Owner decisions: D8 added (do NOT change GBP hours; emergency handled by phone/after-hours); R3 resolved accordingly; D7 updated (owner confirms nothing fabricated); R1 reframed from fabrication-doubt to a technical "is the review schema wired to real/live data" check (owner wants it verified/ready); added prioritized "Photos to gather" list (owner getting plasma/laser cutter shots).
 - 2026-05-26 — Claude — Fresh-eyes pass: added "💡 IDEAS & OPPORTUNITIES" section (risk/quality flags R1–R3, local-SEO gaps L1–L3, content opportunities C1–C3, brand/consistency B1–B2) and new open questions (git-history scrub, financing, analytics, commercial scope) + ongoing review-system future task. All flagged as undecided/needs owner buy-in.
 - 2026-05-26 — Claude — Privacy scrub: removed business-license/account numbers per owner; added Rule 9 (never log sensitive docs/numbers); noted 2026 license in hand (private); confirmed in-house plumbing/electrical licensing surfaced as credential only (D5); added note that emergency-service messaging is preserved despite the mini-splits card choice.
