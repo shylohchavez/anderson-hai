@@ -73,6 +73,21 @@
 ## 📋 GOOGLE BUSINESS PROFILE (GBP) — TASKS
 *(All BLOCKED by D6 freeze until OQ-Account is resolved. Prep now, apply after.)*
 
+### Recommended rollout sequence (added 2026-05-26 after the auto-name-restoration event)
+Don't pile every GBP edit into one session — stagger over ~1–2 weeks so Google sees steady, accuracy-improving updates rather than a chaotic burst right after the name event. Edit only from the verified primary owner account; let the second account's 5-day verification finish on its own.
+
+- **Phase 1 (today/tomorrow, lowest-risk highest-reward):**
+  1. Respond to the 4 pending reviews.
+  2. Upload photos you already have (truck, building sign, plaques, BPI cert, logo).
+- **Phase 2 (a few days later):**
+  3. Paste the final description.
+  4. Add the HVAC services with blurbs.
+  5. Fill empty attributes truthfully.
+- **Phase 3 (after Phase 2 settles, ~a week+):**
+  6. Trim/refine categories (decide on "Air filter supplier").
+  7. Fix the short name (vanity URL).
+  8. Seed 3–5 Q&As, post 1–2 starter Posts.
+
 ### Current GBP state (observed 2026-05-26)
 - Name: Anderson Heating, Air & Insulation ✅
 - Primary category: HVAC contractor ✅
@@ -194,6 +209,7 @@
 ---
 
 ## 📝 CHANGELOG
+- 2026-05-26 — Claude — Added recommended 3-phase GBP rollout sequence (reviews+photos → description+services+attributes → categories+short-name+Q&A/posts), spread over ~1–2 weeks to avoid burst-edit re-review after the name event.
 - 2026-05-26 — Claude — 🎉 GBP name auto-restored by Google to full "Anderson Heating, Air & Insulation" (per official email). D1 resolved; future "name appeal" task closed; saved restoration-email note to evidence list; reminder: do NOT touch the name field now.
 - 2026-05-26 — Claude — Owner decisions: D8 added (do NOT change GBP hours; emergency handled by phone/after-hours); R3 resolved accordingly; D7 updated (owner confirms nothing fabricated); R1 reframed from fabrication-doubt to a technical "is the review schema wired to real/live data" check (owner wants it verified/ready); added prioritized "Photos to gather" list (owner getting plasma/laser cutter shots).
 - 2026-05-26 — Claude — Fresh-eyes pass: added "💡 IDEAS & OPPORTUNITIES" section (risk/quality flags R1–R3, local-SEO gaps L1–L3, content opportunities C1–C3, brand/consistency B1–B2) and new open questions (git-history scrub, financing, analytics, commercial scope) + ongoing review-system future task. All flagged as undecided/needs owner buy-in.
