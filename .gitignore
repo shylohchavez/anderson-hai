@@ -81,3 +81,7 @@ __pycache__/
 venv/
 .venv/
 *.pyc
+# moved to private Obsidian vault — keep strategy/customer/operational data OUT of this public repo
+/data/competitor-intelligence-TODAY-EXTRACTION.md
+/data/anderson-reviews-backup/
+/case-studies/
